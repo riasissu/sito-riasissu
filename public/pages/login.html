@@ -27,13 +27,24 @@
             <div class="col-lg-10 col-md-10 offset-lg-1 offset-md-1 bg-white shadow mb-5 border border-primary">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 p-4 bg-primary divCover">
-                        <img src="./assets/logo-riasissu-big.jpg" alt="Riasissu logo" width="100%">
+                        <img src="../assets/logo-riasissu-big.jpg" alt="Riasissu logo" width="100%">
                     </div>
                     <div class="col-lg-6 col-md-6 p-lg-5 p-md-5 px-3 py-4">
-                     
-                            <button type="button" class="btn btn-outline-primary text-uppercase mb-3"><a href="./pages/login.html">Log In Page</button>
-                            <button type="button" class="btn btn-outline-primary text-uppercase mb-3"><a href="./pages/signup.html">Sign Up Page</button>
-                          
+                        <div id="signInForm">
+                            <h2 class="h2 text-center text-dark mb-3">Sign In</h2>
+                            <div class="form-group">
+                                <label for="userEmail">Email adress<span class="text-danger ml-1">*</span></label>
+                                <input type="email" class="form-control" id="userEmail" onblur="checkEmail()"placeholder="mail@mail.com">
+                                <small id="userEmailError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="userPassword">Password<span class="text-danger ml-1">*</span></label>
+                                <input type="password" class="form-control" id="userPassword" onblur="checkPassword()" placeholder="password">
+                                <small id="userPasswordError"  style="display:none" class="form-text text-danger">Please check your password.</small>
+                            </div>
+                            <button type="button" class="btn btn-outline-primary text-uppercase mb-3" onclick="logIn()">Log In</button>
+                            <p>Registrati: <a href="../pages/signup.html"><strong class="text-primary text-uppercase showSignUpForm">Sign Up</strong></a></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -46,9 +57,9 @@
     
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--SweetAlert2 download locally-->
     
-    <script src="./firebase_setup.js"></script>
-    <script src="./auth/checks.js"></script>
-    <script src="./auth/auth.js"></script>
+    <script src="../firebase_setup.js"></script>
+    <script src="../auth/checks.js"></script>
+    <script src="../auth/auth.js"></script>
 
   </body>
 </html>
