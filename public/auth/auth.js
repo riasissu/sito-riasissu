@@ -1,78 +1,79 @@
 function signUp() {
-  //   var name = document.getElementById("userName").value;
-  //   var surname = document.getElementById("userSurname").value;
-  var name = "ciao";
-  var surname = "ciao";
-  var email = document.getElementById("userEmail").value;
-  var password = document.getElementById("userPassword").value;
+  //   var name = document.getElementById("userName").value
+  //   var surname = document.getElementById("userSurname").value
+  const name = "ciao"
+  const surname = "ciao"
+  const email = document.getElementById("userEmail").value
+  const password = document.getElementById("userPassword").value
   //todo gather other user info
 
-  var checkUserEmailValid = email.match(emailRegex);
-  var checkUserPasswordValid = password.match(passwordRegex);
+  const checkUserEmailValid = email.match(emailRegex)
+  const checkUserPasswordValid = password.match(passwordRegex)
 
   if (name == "") {
-    return checkName();
+    return checkName()
   } else if (surname === "") {
-    return checkSurname();
+    return checkSurname()
   } else if (checkUserEmailValid == null) {
-    return checkEmail();
+    return checkEmail()
   } else if (checkUserPasswordValid == null) {
-    return checkPassword();
+    return checkPassword()
   } else {
     firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
-      .then((success) => {
-        var user = firebase.auth().currentUser;
-        user.sendEmailVerification();
+      .then(_ => {
+        var user = firebase.auth().currentUser
+        user.sendEmailVerification()
         //TODO create user on DATABASE HERE
         new swal(
           "Your Account Created",
           "Your account was created successfully check your email to confirm it"
-        ).then((value) => {
+        ).then(_ => {
           setTimeout(function () {
-            window.location.replace("../index.html");
-          }, 1000);
-        });
+            window.location.replace("../index.html")
+          }, 1000)
+        })
       })
       .catch((error) => {
         new swal({
           title: "Error",
           text: error.message,
-        });
-      });
+        })
+      })
   }
 }
-function logIn() {
-  var email = document.getElementById("userEmail").value;
-  var password = document.getElementById("userPassword").value;
 
-  var checkUserEmailValid = email.match(emailRegex);
-  var checkUserPasswordValid = password.match(passwordRegex);
+function logIn() {
+  const email = document.getElementById("userEmail").value
+  const password = document.getElementById("userPassword").value
+
+  const checkUserEmailValid = email.match(emailRegex)
+  const checkUserPasswordValid = password.match(passwordRegex)
 
   if (checkUserEmailValid == null) {
-    return checkEmail();
+    return checkEmail()
   } else if (checkUserPasswordValid == null) {
-    return checkPassword();
+    return checkPassword()
   } else {
     firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
-      .then((success) => {
+      .then(_ => {
         new swal({
           title: "Succesfully signed in",
-        }).then((value) => {
+        }).then(_ => {
           setTimeout(function () {
-            window.location.replace("./pages/profile.html");
-          }, 1000);
-        });
+            window.location.replace("./pages/profile.html")
+          }, 1000)
+        })
       })
       .catch((error) => {
         new swal({
           title: "Error",
           text: error.message,
-        });
-      });
+        })
+      })
   }
 }
 
@@ -86,46 +87,46 @@ function signOut() {
         title: "Signed Out",
       }).then((value) => {
         setTimeout(function () {
-          window.location.replace("../index.html");
-        }, 1000);
-      });
+          window.location.replace("../index.html")
+        }, 1000)
+      })
     })
     .catch(function (error) {
       new swal({
         title: "Error",
         text: error.message,
-      });
-    });
+      })
+    })
 }
 // firebase.auth().onAuthStateChanged((user) => {
 //   if (user) {
 //     //   User is signed in.
-//     let user = firebase.auth().currentUser;
-//     let uid;
+//     let user = firebase.auth().currentUser
+//     let uid
 //     if (user != null) {
-//       uid = user.uid;
+//       uid = user.uid
 //     }
-//     let firebaseRefKey = firebase.database().ref().child(uid);
+//     let firebaseRefKey = firebase.database().ref().child(uid)
 //     firebaseRefKey.on("value", (dataSnapShot) => {
 //       document.getElementById("userPfFullName").innerHTML =
-//         dataSnapShot.val().userFullName;
+//         dataSnapShot.val().userFullName
 //       document.getElementById("userPfSurname").innerHTML =
-//         dataSnapShot.val().userSurname;
-//       // userEmail = dataSnapShot.val().userEmail;
-//       // userPassword = dataSnapShot.val().userPassword;
+//         dataSnapShot.val().userSurname
+//       // userEmail = dataSnapShot.val().userEmail
+//       // userPassword = dataSnapShot.val().userPassword
 //       document
 //         .getElementById("userPfFb")
-//         .setAttribute("href", dataSnapShot.val().userFb);
+//         .setAttribute("href", dataSnapShot.val().userFb)
 //       document
 //         .getElementById("userPfTw")
-//         .setAttribute("href", dataSnapShot.val().userTw);
+//         .setAttribute("href", dataSnapShot.val().userTw)
 //       document
 //         .getElementById("userPfGp")
-//         .setAttribute("href", dataSnapShot.val().userGp);
+//         .setAttribute("href", dataSnapShot.val().userGp)
 //       document.getElementById("userPfBio").innerHTML =
-//         dataSnapShot.val().userBio;
-//     });
+//         dataSnapShot.val().userBio
+//     })
 //   } else {
 //     //   No user is signed in.
 //   }
-// });
+// })

@@ -1,24 +1,18 @@
 function checkName() {
-  var userName = document.getElementById("userName").value;
-  document.getElementById("userSurnameError").style.display =
-    userName !== "" ? "none" : "block";
+  const userName = document.getElementById("userName").value
+  document.getElementById("userSurnameError").style.display = userName !== "" ? "none" : "block"
 }
 function checkSurname() {
-  var userSurname = document.getElementById("userSurname").value;
-  document.getElementById("userSurnameError").style.display =
-    userSurname !== "" ? "none" : "block";
+  const userSurname = document.getElementById("userSurname").value
+  document.getElementById("userSurnameError").style.display = userSurname !== "" ? "none" : "block"
 }
 function checkEmail() {
-  var userEmail = document.getElementById("userEmail");
-  var valid = userEmail.value.match(emailRegex);
-  document.getElementById("userEmailError").style.display = valid
-    ? "none"
-    : "block";
+  const userEmail = document.getElementById("userEmail")
+  const valid = userEmail.value.match(emailRegex)
+  document.getElementById("userEmailError").style.display = valid ? "none" : "block"
 }
 function checkPassword() {
-  var userPassword = document.getElementById("userPassword");
-  var valid = userPassword.value.match(passwordRegex);
-  document.getElementById("userPasswordError").style.display = valid
-    ? "none"
-    : "block";
+  const userPassword = document.getElementById("userPassword")
+  const valid = userPassword.value.match(passwordRegex)
+  document.getElementById("userPasswordError").style.display = valid ? "none" : "block"
 }
