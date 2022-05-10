@@ -1,18 +1,31 @@
 function signUp() {
   //   var name = document.getElementById("userName").value
   //   var surname = document.getElementById("userSurname").value
-  const name = "ciao"
-  const surname = "ciao"
-  const email = document.getElementById("userEmail").value
-  const password = document.getElementById("userPassword").value
-  //todo gather other user info
+  const user = {
+    firstName,
+    secondName,
+    password,
+    birthPlace,
+    birthDate,
+    CF,
+    addressCity,
+    addressStreet,
+    CAP,
+    email,
+    annoAccademico,
+    annoCorso,
+    laureaTipo,//triennale 1, magistrale 2, ciclo unico 3
+    laureaNome,
+    university,
+    collegeName
+  }
 
   const checkUserEmailValid = email.match(emailRegex)
   const checkUserPasswordValid = password.match(passwordRegex)
 
   if (name == "") {
     return checkName()
-  } else if (surname === "") {
+  } else if (surname == "") {
     return checkSurname()
   } else if (checkUserEmailValid == null) {
     return checkEmail()
@@ -27,7 +40,7 @@ function signUp() {
         user.sendEmailVerification()
         //TODO create user on DATABASE HERE
         new swal(
-          "Your Account Created",
+          "Account Created",
           "Your account was created successfully check your email to confirm it"
         ).then(_ => {
           setTimeout(function () {
@@ -98,6 +111,7 @@ function signOut() {
       })
     })
 }
+
 // firebase.auth().onAuthStateChanged((user) => {
 //   if (user) {
 //     //   User is signed in.
