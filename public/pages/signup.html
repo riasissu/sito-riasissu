@@ -33,17 +33,230 @@
                         <div id="signInForm">
                             <h2 class="h2 text-center text-dark mb-3">Sign Up</h2>
                             <div class="form-group">
-                                <label for="userEmail">Email adress<span class="text-danger ml-1">*</span></label>
-                                <input type="email" class="form-control" id="userEmail" onblur="checkEmail()"placeholder="mail@mail.com">
-                                <small id="userEmailError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
+                                <label for="userName">Name<span class="text-danger ml-1">*</span></label>
+                                <input type="text" class="form-control" id="userName" onblur="checkName()" placeholder="">
+                                <small id="userNameError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
                             </div>
+							
                             <div class="form-group">
-                                <label for="userPassword">Password<span class="text-danger ml-1">*</span></label>
-                                <input type="password" class="form-control" id="userPassword" onblur="checkPassword()" placeholder="password">
-                                <small id="userPasswordError"  style="display:none" class="form-text text-danger">Please check your password.</small>
+                                <label for="userSurname">Surname<span class="text-danger ml-1">*</span></label>
+                                <input type="text" class="form-control" id="userSurname" onblur="checkSurname()" placeholder="">
+                                <small id="userSurnameError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
                             </div>
-                            <h5>Aggiungere tutti gli altri campi necessari alla registrazione</h5>
-                        
+							
+                             <div class="form-group">	
+                                              <label for="userEmail">Email address<span class="text-danger ml-1">*</span></label>
+                                              <input type="email" class="form-control" id="userEmail" onblur="checkEmail()"placeholder="mail@mail.com">
+                                              <small id="userEmailError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
+                                          </div>
+
+                                          <div class="form-group">
+                                              <label for="userPassword">Password<span class="text-danger ml-1">*</span></label>
+                                              <input type="password" class="form-control" id="userPassword" onblur="checkPassword()" placeholder="password">
+                                              <small id="userPasswordError"  style="display:none" class="form-text text-danger">Please check your password.</small>
+                                          </div>
+
+                                          <div class="form-group">
+                                              <label for="userPasswordConfirm">Confirm password<span class="text-danger ml-1">*</span></label>
+                                              <input type="password" class="form-control" id="userPasswordConfirm" onblur="checkPasswordMatching()" placeholder="password">
+                                              <small id="userPasswordNotMatching"  style="display:none" class="form-text text-danger">Please check your password.</small>
+                                          </div>
+
+                            <div class="form-group">
+                                              <label for="userBirthPlace">Birth place:<span class="text-danger ml-1">*</span></label>
+                                              <input type="text" class="form-control" id="userBirthPlace" onblur="checkBirthPlace()">
+                                              <small id="userBirthPlaceError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
+                                          </div>
+
+                            <div class="form-group">
+                                              <label for="userBirthDate">Birth date:<span class="text-danger ml-1">*</span></label>
+                                              <input type="date" class="form-control" id="userBirthDate" onblur="checkBirthDate()">
+                                              <small id="userBirthDateError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
+                                          </div>
+
+                            <div class="form-group">
+                                              <label for="userCodiceFiscale">Codice Fiscale<span class="text-danger ml-1">*</span></label>
+                                              <input type="text" class="form-control" id="userCodiceFiscale" onblur="checkCodiceFiscale()" placeholder="XXXXXXNNXNNXNNNX
+                              ">
+                                              <small id="userCodiceFiscaleError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
+                                          </div>
+
+                            <div class="form-group">
+                                              <label for="userAddressCity">City of residence:<span class="text-danger ml-1">*</span></label>
+                                              <input type="text" class="form-control" id="userAddressCity" onblur="checkCity()">
+                                              <small id="userBirthPlaceError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
+                                          </div>
+
+                            <div class="form-group">
+                                              <label for="userAddressStreet">Address:<span class="text-danger ml-1">*</span></label>
+                                              <input type="text" class="form-control" id="userAddressStreet" onblur="checkAddress()">
+                                              <small id="userBirthPlaceError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
+                                          </div>
+
+                            <div class="form-group">
+                                              <label for="userCAP">CAP:<span class="text-danger ml-1">*</span></label>
+                                              <input type="text" class="form-control" id="userCAP" onblur="checkCAP()">
+                                              <small id="userCAPError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
+                                          </div>
+
+                            <div class="form-group">
+                                              <label for="academicYear">Academic Year:<span class="text-danger ml-1">*</span></label>
+                                              <select class="form-control" id="academicYear" onblur="checkAcademicYear()">
+                                <option value="21-22">2021/2022</option>
+                              </select>
+                                              <small id="academicYearError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
+                                          </div>
+
+                            <div class="form-group">
+                                              <label for="userCollegeName">Select the School or Institute you are a student in:<span class="text-danger ml-1">*</span></label>
+                                              <select class="form-control" id="userCollegeName" onblur="checkCollegeName()" required>
+                                <option value="null" disabled selected>---</option>
+                                <option value="CSB">Collegio Superiore dell’Università di Bologna</option>
+                                <option value="SSC">Scuola Superiore di Catania</option>
+                                <option value="SSU">Scuola Superiore di Udine</option>
+                                <option value="SSSUP">Scuola Superiore di Studi Universitari e di Perfezionamento Sant’Anna</option>
+                                <option value="SSAS">Scuola Superiore di Studi Avanzati della Sapienza di Roma</option>
+                                <option value="SNS">Scuola Normale Superiore</option>
+                                <option value="ISUFI">Istituto Superiore Universitario di Formazione Interdisciplinare di Lecce</option>
+                                <option value="IUSS">Istituto Universitario di Studi Superiori Pavia</option>
+                                <option value="SSSGL">Scuola di Studi Superiori "Giacomo Leopardi" di Macerata</option>
+                                <option value="SGSS">Scuola Galileiana di Studi Superiori di Padova	</option>
+                                <option value="SSST">Scuola di Studi Superiori "Ferdinando Rossi" Torino</option>
+                                <option value="CICF">Collegio Internazionale Ca' Foscari</option>
+                              </select>
+                              <small id="userCollegeNameError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
+                                          </div>
+
+                            <div class="form-group">
+                              <label for="userUniversity">University:<span class="text-danger ml-1">*</span></label>	
+                              <input class="form-control" id="userUniversity" list="universities" name="university" onblur="checkUniversity()">
+                                <datalist id="universities">
+                                  <option>Università degli Studi "Gabriele d'Annunzio"</option>
+                                  <option>Università degli Studi dell'Aquila</option>
+                                  <option>Università degli Studi di Teramo</option>
+                                  <option>Università degli Studi della Basilicata</option>
+                                  <option>Università degli Studi di Catanzaro "Magna Græcia"</option>
+                                  <option>Università degli Studi della Calabria</option>
+                                  <option>Università degli Studi di Reggio Calabria "Mediterranea"</option>
+                                  <option>Università degli Studi di Napoli "Federico II"</option>
+                                  <option>Università degli Studi di Napoli "L'Orientale"</option>
+                                  <option>Università degli Studi di Napoli "Parthenope"</option>
+                                  <option>Università degli Studi della Campania Luigi Vanvitelli</option>
+                                  <option>Università degli Studi di Salerno</option>
+                                  <option>Università degli Studi del Sannio</option>
+                                  <option>Alma mater studiorum - Università di Bologna</option>
+                                  <option>Università degli Studi di Ferrara</option>
+                                  <option>Università degli Studi di Modena e Reggio Emilia</option>
+                                  <option>Università degli Studi di Parma</option>
+                                  <option>Università degli Studi di Trieste</option>
+                                  <option>Università degli Studi di Udine</option>
+                                  <option>Università degli Studi di Cassino e del Lazio Meridionale</option>
+                                  <option>Università degli Studi di Roma "Foro Italico"</option>
+                                  <option>Università degli Studi di Roma "La Sapienza"</option>
+                                  <option>Università degli Studi di Roma Tor Vergata</option>
+                                  <option>Università degli Studi Roma Tre</option>
+                                  <option>Università degli Studi della Tuscia</option>
+                                  <option>Università degli Studi di Genova</option>
+                                  <option>Università degli Studi di Bergamo</option>
+                                  <option>Università degli Studi di Brescia</option>
+                                  <option>Politecnico di Milano</option>
+                                  <option>Università degli Studi di Milano</option>
+                                  <option>Università degli Studi di Milano-Bicocca</option>
+                                  <option>Università degli Studi di Pavia</option>
+                                  <option>Università degli Studi dell'Insubria</option>
+                                  <option>Università Politecnica delle Marche</option>
+                                  <option>Università degli Studi di Camerino</option>
+                                  <option>Università degli Studi di Macerata</option>
+                                  <option>Università degli Studi di Urbino</option>
+                                  <option>Università degli Studi del Molise</option>
+                                  <option>Università degli Studi del Piemonte Orientale "Amedeo Avogadro"</option>
+                                  <option>Università degli Studi di Torino</option>
+                                  <option>Politecnico di Torino</option>
+                                  <option>Politecnico di Bari</option>
+                                  <option>Università degli Studi di Bari</option>
+                                  <option>Università degli Studi di Foggia</option>
+                                  <option>Università del Salento</option>
+                                  <option>Università degli Studi di Cagliari</option>
+                                  <option>Università degli Studi di Sassari</option>
+                                  <option>Università degli Studi di Catania</option>
+                                  <option>Università degli Studi di Messina</option>
+                                  <option>Università degli Studi di Palermo</option>
+                                  <option>Università degli Studi di Firenze</option>
+                                  <option>IMT - Scuola IMT Alti Studi Lucca</option>
+                                  <option>Università di Pisa</option>
+                                  <option>Università degli Studi di Siena</option>
+                                  <option>Università per stranieri di Siena</option>
+                                  <option>Università degli Studi di Trento</option>
+                                  <option>Libera Università di Bolzano</option>
+                                  <option>Università degli Studi di Perugia</option>
+                                  <option>Università per stranieri di Perugia</option>
+                                  <option>Università degli Studi di Padova</option>
+                                  <option>Università Ca' Foscari di Venezia</option>
+                                  <option>Università Iuav di Venezia</option>
+                                  <option>Università degli Studi di Verona</option>
+                                  <option>Università della Valle d'Aosta / Université de la Vallée d'Aoste</option>
+                                  <option>Università degli Studi di Enna "Kore"</option>
+                                  <option>Università degli Studi di Scienze Gastronomiche</option>
+                                  <option>Libera Università Mediterranea Giuseppe Degennaro</option>
+                                  <option>Università Carlo Cattaneo LIUC</option>
+                                  <option>Libera università di lingue e comunicazione IULM</option>
+                                  <option>Università Cattolica del Sacro Cuore</option>
+                                  <option>Università commerciale Luigi Bocconi</option>
+                                  <option>Università Vita-Salute San Raffaele</option>
+                                  <option>Humanitas University</option>
+                                  <option>Università degli Studi "Suor Orsola Benincasa"</option>
+                                  <option>Università per stranieri "Dante Alighieri" di Reggio Calabria </option>
+                                  <option>Libera università internazionale degli studi sociali Guido Carli</option>
+                                  <option>Libera Università Maria Santissima Assunta</option>
+                                  <option>Università Campus Bio-Medico</option>
+                                  <option>Università degli Studi Internazionali di Roma </option>
+                                  <option>Università degli Studi Link Campus University</option>
+                                  <option>Università Europea di Roma</option>
+                                  <option>Saint Camillus International University of Health Sciences</option>
+                                  <option>ESCP Business School</option>
+                                  <option>International University College of Turin</option>
+                                  <option>Istituto d'Arte Applicata e Design IAAD</option>
+                                  <option>Istituto Universitario Salesiano di Venezia IUSVE</option>
+                              </datalist>
+                              <small id="userUniversityError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="userDegreeType">Degree type:<span class="text-danger ml-1">*</span></label>
+                              <select class="form-control" id="userDegreeType" onblur="checkDegreeType()" required>
+                                <option value="null" disabled selected>---</option>
+                                <option value = 1>Corso di laurea</option>
+                                <option value = 2>Corso di laurea magistrale</option>
+                                <option value = 3>Corso di laurea magistrale a ciclo unico</option>
+                              </select>
+                              <small id="userDegreeTypeError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="userYear">Year:<span class="text-danger ml-1">*</span></label>
+                              <select class="form-control" id="userYear" onblur="checkYear()" required>
+                                <option value="null" disabled selected>---</option>
+                                <option value = 1>1</option>
+                                <option value = 2>2</option>
+                                <option value = 3>3</option>
+                                <option value = 4>4</option>
+                                <option value = 5>5</option>
+                                <option value = 6>6</option>
+                              </select>
+                              <small id="userYearError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="userDegreeName">Degree name:<span class="text-danger ml-1">*</span></label>
+                              <input id="userDegreeName" class="form-control" onblur="checkDegreeName()">
+                              <small id="userDegreeNameError"  style="display:none" class="form-text text-danger">Please check your login information.</small>
+                            </div>
+
+							
+							
+							
+							
+							
                             <button type="button" class="btn btn-outline-primary text-uppercase mb-3" onclick="signUp()">Sign Up</button>
                             <p>Sei gia registrato? <a href="../pages/login.html"><strong class="text-primary text-uppercase showSignUpForm">Log In</strong></a></p>
                         </div>
