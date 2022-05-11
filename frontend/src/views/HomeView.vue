@@ -1,17 +1,20 @@
 <template>
-<div>
-  <hello-world />
-</div>
+  <div>
+    <v-if>Questa è la home</v-if>
+    <v-else>
+      This is my casa
+    </v-else>
+  </div>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
 
-  export default {
-    name: 'HomeView',
 
-    components: {
-      HelloWorld,
-    },
-  }
+export default {
+  name: 'HomeView',
+
+  components: {
+
+  },
+}
 </script>

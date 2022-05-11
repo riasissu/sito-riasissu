@@ -1,4 +1,7 @@
 # sito-riasissu
 
+TODO:
 
-Questo è un readme serio.
+utenti privilegiati
+internazionalizzazione
+
