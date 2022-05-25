@@ -1,5 +1,4 @@
 <template>
-  <v-app>
     <v-container>
       <v-row>
         <v-col col="6"></v-col>
@@ -17,7 +16,7 @@
                 :rules="[rules.required, rules.min]" :type="show1 ? 'text' : 'password'" name="input-10-1"
                 label="Password" counter @click:append="show1 = !show1">
               </v-text-field>
-              <p> {{ errMessage }}</p>
+              <span class="red--text"> {{ errMessage }}</span>
               <v-btn :disable='!valid' depressed :color="valid ? 'primary' : ''" @click="login()">
                 Login
               </v-btn>
@@ -29,11 +28,10 @@
         <v-col col="2"></v-col>
       </v-row>
     </v-container>
-  </v-app>
 </template>
 
 <script>
-import { Login } from '@/firebase/auth.js'
+import Auth from '@/firebase/auth.js'
 export default {
   data: () => ({
     show1: false,
@@ -52,11 +50,12 @@ export default {
     },
   }),
   methods: {
-    login: () => {
-      Login(this.email, this.password).then(() => {
-        $router.go("profile");
-      }).catch(() => {
-        this.errMessage = "Password inserita non valida"
+    login: function()  {
+      console.log(Auth);
+      Auth.Login(this.email, this.password).then(() => {
+        this.$router.push("profile")
+      }).catch((err)=>{
+        this.errMessage=err;
       })
     }
   },

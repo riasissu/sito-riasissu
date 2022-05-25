@@ -57,7 +57,7 @@ Vue.use(Vuetify,
   colors
 )
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 
 const firebaseConfig = {
@@ -78,10 +78,11 @@ firebase.initializeApp(firebaseConfig)
 //const passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/
 
 const vuetify = new Vuetify({ components,
-   theme: { dark: true }
-} )
+//   theme: { dark: true }
+} );
+
 new Vue({
   vuetify,
   router,
   render: h => h(App)
-}).$mount('#app')
+}).$mount('#app');
