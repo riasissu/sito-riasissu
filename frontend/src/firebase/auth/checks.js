@@ -1,4 +1,3 @@
-
 /*function checkName() {
   const userName = document.getElementById("userName").value
   document.getElementById("userSurnameError").style.display = userName !== "" ? "none" : "block"
