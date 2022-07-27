@@ -32,6 +32,11 @@ const routes = [
     path:'/profile',
     name:'profile',
     component:()=>import(/* webpackChunkName: "profile" */ '../views/ProfileView.vue')
+  },
+  {
+    path:'/scuole',
+    name:'scole',
+    component:()=>import(/* webpackChunkName: "profile" */ '../views/MappaView.vue')
   }
 //  {
 //    path: '/*',
