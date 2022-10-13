@@ -7,9 +7,9 @@
                     :cy="(-inizio[0]+scuola.posizione[0])*rapp[0]" 
                     :cx="(-inizio[1]+scuola.posizione[1])*rapp[1]"  
                     r="2.2" fill="blue"  
-                    @mouseover="selScuola(scuola.id,scuola.posizione)"
+                    @mouseover="selScuola(scuola.id)"
             />
-            <circle :cy="(-inizio[0]+posAttiva[0])*rapp[0]" 
+            <circle v-if="posAttiva" :cy="(-inizio[0]+posAttiva[0])*rapp[0]" 
                     :cx="(-inizio[1]+posAttiva[1])*rapp[1]"  
                     r="3" fill="blue" stroke="yellow" stroke-width="1.2"/>
             
@@ -25,13 +25,13 @@ export default {
             listaScuole:datiScuole.listaScuole,
             rapp:[datiScuole.dim[0]/(datiScuole.fine[0]-datiScuole.inizio[0]),datiScuole.dim[1]/(datiScuole.fine[1]-datiScuole.inizio[1])], 
             inizio:datiScuole.inizio,
-            posAttiva:[-10,-10]
         }
     },
+    props:['posAttiva'],
+        
     methods: {
-        selScuola(idScuola,pos){
+        selScuola(idScuola){
             this.$emit('cambioScuola',idScuola);
-            this.posAttiva=pos
         }
     },
 }

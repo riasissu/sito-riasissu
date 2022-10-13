@@ -20,30 +20,30 @@ export default{
         },
         {
             citta:"Pisa",
-            posizione:[43.719531216680636, 10.400438438165256],
+            posizione:[43.6, 10.400438438165256],
             nome:"Scuola Normale Superiore",
             descrizione:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis non placeat, quos corporis obcaecati cupiditate est excepturi eos hic molestiae amet quo, officia perspiciatis consectetur id ipsa fugiat voluptate nesciunt!",
             id:3,
             sito:'https://www.sns.it/it',
             img:'normale-pisa.jpg'
         },
+        { /* Posizioni modificate per essere distinte */
+            citta:"Pisa",
+            posizione:[43.8, 10.40273496891617],
+            nome:"Sant'Anna",
+            descrizione:"",
+            id:4,
+            sito:'https://www.santannapisa.it/it',
+            img:'santanna-pisa.jpg'
+        },
         {
             citta:"Pavia",
             posizione:[45.18484990797697, 9.154252526907126],
             nome:"IUSS Pavia",
             descrizione:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis non placeat, quos corporis obcaecati cupiditate est excepturi eos hic molestiae amet quo, officia perspiciatis consectetur id ipsa fugiat voluptate nesciunt!",
-            id:4,
+            id:5,
             sito:'https://www.iusspavia.it/it',
             img:'iuss-pavia.png'
-        },
-        {
-            citta:"Pisa",
-            posizione:[43.72091879001207, 10.40273496891617],
-            nome:"Sant'Anna",
-            descrizione:"",
-            id:5,
-            sito:'https://www.santannapisa.it/it',
-            img:'santanna-pisa.jpg'
         },
         {
             citta:"Napoli",

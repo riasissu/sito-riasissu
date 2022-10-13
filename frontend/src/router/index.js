@@ -35,9 +35,29 @@ const routes = [
   },
   {
     path:'/scuole',
-    name:'scole',
+    name:'scuole',
     component:()=>import(/* webpackChunkName: "profile" */ '../views/MappaView.vue')
-  }
+  },
+  {
+    path:'/chiasmo',
+    name:'chiasmo',
+    component:()=>import(/* webpackChunkName: "profile" */ '../views/ChiasmoView.vue')
+  },
+  {
+    path:'/reteidee',
+    name:'reteidee',
+    component:()=>import(/* webpackChunkName: "profile" */ '../views/ReteIdeeView.vue')
+  },
+  {
+    path:'/xcool',
+    name:'xcool',
+    component:()=>import(/* webpackChunkName: "profile" */ '../views/XCoolView.vue')
+  },
+  //{
+  //  path:'/scuole',
+  //  name:'scole',
+  //  component:()=>import(/* webpackChunkName: "profile" */ '../views/MappaView.vue')
+  //}
 //  {
 //    path: '/*',
 //    name: '404',
