@@ -21,7 +21,6 @@
         Chiasmo
       </p>
       <p class="text-md-left">
-      Il chiasmo è Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint enim illum consequuntur harum. Eaque itaque natus illum molestiae, fugiat officiis explicabo vitae rerum ratione. Laudantium repellendus veritatis ea dolorem ipsa.
       </p>
       ...
 
