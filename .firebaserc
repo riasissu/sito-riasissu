@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "sito-riasissu"
-  }
+    "default": "riasissu",
+    "sito-riasissu": "sito-riasissu"
+  },
+  "targets": {},
+  "etags": {}
 }
