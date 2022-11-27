@@ -17,7 +17,7 @@
                 label="Password" counter @click:append="show1 = !show1">
               </v-text-field>
               <span class="red--text"> {{ errMessage }}</span>
-              <v-btn :disable='!valid' depressed :color="valid ? 'primary' : ''" @click="login()">
+              <v-btn :disable='!valid' depressed :color="valid ? 'primary' : ''" @click="signIn()">
                 Login
               </v-btn>
 
@@ -31,7 +31,10 @@
 </template>
 
 <script>
-import Auth from '@/firebase/auth.js'
+import {getAuth, signInWithEmailAndPassword, connectAuthEmulator } from 'firebase/auth';
+const auth = getAuth()
+connectAuthEmulator(auth, "http://localhost:9099");
+
 export default {
   data: () => ({
     show1: false,
@@ -50,9 +53,8 @@ export default {
     },
   }),
   methods: {
-    login: function()  {
-      console.log(Auth);
-      Auth.Login(this.email, this.password).then(() => {
+    signIn: function()  {
+      signInWithEmailAndPassword(auth, this.email, this.password).then(() => {
         this.$router.push("profile")
       }).catch((err)=>{
         this.errMessage=err;
