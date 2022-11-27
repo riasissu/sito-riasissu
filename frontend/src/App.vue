@@ -35,71 +35,71 @@
 <template>
   <v-app>
 
-  <v-app-bar app elevation="0" color="grey lighten-5">
+    <v-app-bar app elevation="0" color="grey lighten-5">
 
-    <div class = "text-h2 ma-10" color="grey lighten-5">
-      <router-link to="/">RIASISSU</router-link>
-    </div>
+      <div class="text-h2 ma-10" color="grey lighten-5">
+        <router-link to="/">RIASISSU</router-link>
+      </div>
 
-    <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
 
-    <span class="ma-5">
-      <router-link to="/scuole">Scuole</router-link>
-    </span>
+      <span class="ma-5">
+        <router-link to="/scuole">Scuole</router-link>
+      </span>
 
-    <span class="ma-5">
-      <router-link to="/chiasmo">Chiasmo</router-link>
-    </span>
+      <span class="ma-5">
+        <router-link to="/chiasmo">Chiasmo</router-link>
+      </span>
 
-    <span class="ma-5">
-      <router-link to="/reteidee">Rete di idee</router-link>
-    </span>
+      <span class="ma-5">
+        <router-link to="/reteidee">Rete di idee</router-link>
+      </span>
 
-    <span class="ma-5">
-      <router-link to="/scuole">Scuole</router-link>
-    </span>
+      <span class="ma-5">
+        <router-link to="/scuole">Scuole</router-link>
+      </span>
 
-    <div>
+      <div>
 
-      <router-link class="pr-4" to="/login">
-        <v-btn color="primary" class="ma-5">Login</v-btn>
-      </router-link>
+        <router-link class="pr-4" to="/login">
+          <v-btn color="primary" class="ma-5">Login</v-btn>
+        </router-link>
 
-      <router-link to="/signup">
-        <v-btn outlined color="primary ">Registrati</v-btn>
-      </router-link> 
+        <router-link to="/signup">
+          <v-btn outlined color="primary ">Registrati</v-btn>
+        </router-link>
 
-    </div>
+      </div>
 
-  
-  </v-app-bar>
+
+    </v-app-bar>
 
     <v-main>
       <router-view />
     </v-main>
-  
+
   </v-app>
 </template>
 
 <script>
 
-import { initializeApp} from 'firebase/app';
+import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
 
-apiKey: "AIzaSyDDbBbCydrNYqW8o3lG0vnFvdtlhGzywgo",
+  apiKey: "AIzaSyDDbBbCydrNYqW8o3lG0vnFvdtlhGzywgo",
 
-authDomain: "sito-riasissu.firebaseapp.com",
+  authDomain: "sito-riasissu.firebaseapp.com",
 
-projectId: "sito-riasissu",
+  projectId: "sito-riasissu",
 
-storageBucket: "sito-riasissu.appspot.com",
+  storageBucket: "sito-riasissu.appspot.com",
 
-messagingSenderId: "81670035087",
+  messagingSenderId: "81670035087",
 
-appId: "1:81670035087:web:433f388c9fe06a522842fa",
+  appId: "1:81670035087:web:433f388c9fe06a522842fa",
 
-measurementId: "G-WQJ6WP2TKN"
+  measurementId: "G-WQJ6WP2TKN"
 
 };
 
