@@ -4,8 +4,7 @@ import App from './App.vue'
 
 
 import components from 'vuetify/lib/components'
-import colors from 'vuetify/lib/util/colors'
-
+import colors from 'vuetify/lib/util/colors'  
 
 import Vuetify from 'vuetify/lib'
 import '@mdi/font/css/materialdesignicons.css'
@@ -21,7 +20,7 @@ const vuetify = new Vuetify({
 Vue.use(Vuetify,
   components,
   colors,
-)
+  )
 
 Vue.config.productionTip = false;
 new Vue({

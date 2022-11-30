@@ -1,34 +1,13 @@
 <template>
-  <div>
-    <v-row justify="center">
-  <v-col class="col-6" >
-  <div  class="text-center">
-    
-      <div class="text-h3   ">
-      Benvenuto nella  RIASISSU
-      </div>
-    <div>
-      IMMAGINE
-    </div>
-    <p>
-      La riasissu  .... 
-    </p>
-    <div>
-      <p class="text-h4 text-center">
-        Iniziative
-      </p>
-      <p class="text-h5 text-center">
-        Chiasmo
-      </p>
-      <p class="text-md-left">
-      </p>
-      ...
 
-    </div>
-
+  <div class="scroll">
+  <div class="logo">
+    <img class="logoIm" src="../assets/logo-riasissu-big.jpg">
   </div>
- 
-  </v-col></v-row>
+
+  <div class="inf">
+    <h1>Page2</h1>
+  </div>
 </div>
 </template>
 
@@ -36,7 +15,37 @@
 
 
 export default {
+
   name: 'HomeView',
 
-}
+} 
 </script>
+
+
+
+<style scoped>
+
+.scroll{
+  height: 100%;
+  overflow: auto;
+}
+
+.logoIm {
+  scale:0.8
+}
+
+.logo{
+  background-color: #005b9a;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inf {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+</style>
