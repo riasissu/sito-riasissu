@@ -10,6 +10,8 @@ import colors from 'vuetify/lib/util/colors'
 import Vuetify from 'vuetify/lib'
 import '@mdi/font/css/materialdesignicons.css'
 
+export const eventBus = new Vue();
+
 const vuetify = new Vuetify({
   icons: {
     iconfont: 'mdi', // default - only for display purposes
@@ -22,10 +24,9 @@ Vue.use(Vuetify,
 )
 
 Vue.config.productionTip = false;
-
-
 new Vue({
   vuetify,
   router,
   render: h => h(App)
 }).$mount('#app');
+
