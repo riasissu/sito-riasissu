@@ -46,13 +46,6 @@ export default{
             img:'iuss-pavia.png'
         },
         {
-            citta:"Napoli",
-            posizione:[40.847426060792486, 14.258090640244731],
-            nome:"",
-            descrizione:"",
-            id:6
-        },
-        {
             citta:"Torino",
             posizione:[45.07114909518141, 7.697363869233653],
             nome:"",
