@@ -1,39 +1,6 @@
-<!--<template>
-<v-app>
-
-  <v-row class="pa-5" >
-    <v-col class="pl-8">
-      <router-link to="/scuole">Scuole</router-link>
-      <router-link class="pl-4" to="/chiasmo">Chiasmo</router-link>
-      <router-link class="pl-4" to="/xcool">Xcool</router-link>
-      <router-link class="pl-4" to="/reteidee">Rete di idee</router-link>
-    </v-col>
-    
-    <v-spacer></v-spacer>
-    
-    <v-col>
-    <router-link  to="/" class="text-decoration-none " >
-      <p class="text-h3 " style="color:black"  > RIASISSU</p>
-    </router-link>
-    
-   </v-col>
-  <v-spacer></v-spacer>
-
-  <v-col>
-    <router-link class="pr-4" to="/login"><v-btn color="primary" >Login</v-btn></router-link>
-    <router-link to="/signup"><v-btn outlined color="primary ">Registrati</v-btn></router-link>
-  </v-col>
-  </v-row>
-
-  <v-main>
-    <router-view />
-  </v-main>
-
-  </v-app>
-</template>-->
-
 <template>
-  <v-app>
+  <!--
+    <v-app>
 
     <v-app-bar app elevation="0" color="grey lighten-5">
 
@@ -55,10 +22,6 @@
         <router-link to="/reteidee">Rete di idee</router-link>
       </span>
 
-      <span class="ma-5">
-        <router-link to="/scuole">Scuole</router-link>
-      </span>
-
       <div>
 
         <router-link class="pr-4" to="/login">
@@ -77,15 +40,57 @@
     <v-main>
       <router-view />
     </v-main>
-
   </v-app>
+  -->
+
+  <div>
+    <b-navbar class="navbar" sticky toggleable="md" type="dark" variant="dark">
+      <b-navbar-brand to="/"> RIASISSU </b-navbar-brand>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" is-nav>
+        
+        <b-navbar-nav>
+          <b-nav-item to="/scuole ">Link</b-nav-item>
+          <b-nav-item href="#" disabled>Disabled</b-nav-item>
+        </b-navbar-nav>
+
+        <b-navbar-nav>
+          <b-nav-item to="/login">
+            <b-button class="sign" active> Login </b-button>
+          </b-nav-item>
+
+          <b-nav-item to="/signup">
+            <b-button class="sign" active> Registrati </b-button>
+          </b-nav-item>
+                  </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
+
+    <router-view />
+  </div>
 </template>
 
 <script>
-
-import './firebase/initialize'
+import "./firebase/initialize";
 
 export default {
-  name: "App"
+  name: "App",
 };
 </script>
+
+<style scoped>
+.navbar {
+  padding-left: 10pt;
+  padding-right: 10pt;
+}
+
+.sign {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#nav-collapse{
+  justify-content: space-between;
+}
+</style>
