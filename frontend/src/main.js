@@ -1,37 +1,34 @@
-import router from './router'
-import Vue from 'vue'
-import App from './App.vue'
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
+import { createRouter, createWebHistory } from "vue-router";
+import HomeView from "./views/HomeView.vue";
 
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
+import "@mdi/font/css/materialdesignicons.css";
+
+const routes = [
+  {
+    path: "/",
+    name: "home",
+    component: HomeView,
+  },
+];
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes: routes,
+});
+
+const app = createApp(App);
 
 
-//import components from 'vuetify/lib/components'
-//import colors from 'vuetify/lib/util/colors'  
 
-//import Vuetify from 'vuetify/lib'
-import '@mdi/font/css/materialdesignicons.css'
+app.use(BootstrapVue);
+app.use(IconsPlugin);
+app.use(router);
 
-export const eventBus = new Vue();
+app.config.productionTip = false;
 
-//const vuetify = new Vuetify({
-//  icons: {
-//    iconfont: 'mdi', // default - only for display purposes
-//    },
-//})
-
-Vue.use(//Vuetify,
-  //components,
-  //colors,
-  BootstrapVue,
-  IconsPlugin
-  )
-
-Vue.config.productionTip = false;
-new Vue({
-  //vuetify,
-  router,
-  render: h => h(App)
-}).$mount('#app');
-
+app.mount("#app");

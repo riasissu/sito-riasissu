@@ -1,8 +1,7 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { app } from '../main'
+import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
-Vue.use(VueRouter)
 
 const routes = [
   {
@@ -67,11 +66,12 @@ const routes = [
 //  }
 ]
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
+const router = createRouter({
+  history: createWebHistory(),
+  routes: routes,
 })
+
+app.use(router);
 
 
 
