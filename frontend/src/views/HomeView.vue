@@ -54,15 +54,25 @@
     </b-carousel>
   </div>
 
-  <div class="inf">
-      <div ref="aaaa">
+  <div class="container">
+      <div ref="chisiamo">
         <h1 class ="h1">Chi Siamo?</h1>
-        <p class="chi">Un associazione di studenti che</p>
-        <p class="chi">vuole salvare il mondo</p>
-        <p class="chi">dalla prossima invasione aliena</p>
+        <p class="p">Un associazione di studenti che</p>
+        <p class="p">vuole salvare il mondo</p>
+        <p class="p">dalla prossima invasione aliena</p>
+      </div>
+
+      <div ref="cosafacciamo">
+        <h1 class="h1">Cosa facciamo?</h1>
+        <p class="p">lorem ipsum</p>
       </div>
   </div>
+  <div class="container">
+  <h1>Le scuole</h1>
+</div>  
 </div>
+
+
 </template>
 
 <script>
@@ -99,16 +109,18 @@ export default {
         console.log(entry)
         console.log(this)
         this.show = true;
-        entry.target.children[0].classList.add('h1-new');
-        entry.target.children[1].classList.add('h1-new');
-        entry.target.children[2].classList.add('h1-new');
-        entry.target.children[3].classList.add('h1-new');
+
+        for(let e of entry.target.children){
+          console.log(e)
+          e.classList.add("h1-new");
+        }
 
     }
   })
 })
     
-    observer.observe(this.$refs.aaaa)
+    observer.observe(this.$refs.chisiamo)
+    observer.observe(this.$refs.cosafacciamo)
   }
 
 
@@ -135,7 +147,7 @@ export default {
   transform: translateX(100px)  
 }
 
-.chi{
+.p{
   
   opacity: 0.2;
   transition: all 3.5s;
@@ -162,10 +174,10 @@ export default {
   align-items: center;
 
 }
-.inf {
+.container {
   height: 100%;
   display: flex;
-  justify-content: left;
+  justify-content: space-around;
   align-items: top; 
   padding: 50px;
 }
