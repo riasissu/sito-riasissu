@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar class="navbar" sticky toggleable="md" type="dark" variant="dark">
+    <b-navbar id="mainNav" class="navbar navbar-fixed-top" toggleable="md">
       <b-navbar-brand to="/"> RIASISSU </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -35,7 +35,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+@import "./scss/styles.scss";
 .navbar {
   padding-left: 30pt;
   padding-right: 30pt;
@@ -49,4 +51,5 @@ export default {
 #nav-collapse {
   justify-content: space-between;
 }
+
 </style>

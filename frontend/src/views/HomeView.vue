@@ -1,59 +1,9 @@
 <template>
   <div class="container-fluid">
-    <div class="logo">
-      <b-carousel
-        id="carousel-1"
-        v-model="slide"
-        :interval="4000"
-        controls
-        indicators
-        background="#ababab"
-        img-width="1024"
-        img-height="480"
-        style="text-shadow: 1px 1px 2px #333"
-        @sliding-start="onSlideStart"
-        @sliding-end="onSlideEnd"
-      >
-        <!-- Text slides with image -->
-        <b-carousel-slide
-          caption="First slide"
-          text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-          img-src="https://picsum.photos/1024/480/?image=52"
-        ></b-carousel-slide>
-
-        <!-- Slides with custom text -->
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
-          <h1>RIASISSU</h1>
-        </b-carousel-slide>
-
-        <!-- Slides with image only -->
-        <b-carousel-slide
-          img-src="https://picsum.photos/1024/480/?image=58"
-        ></b-carousel-slide>
-
-        <!-- Slides with img slot -->
-        <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
-        <b-carousel-slide>
-          <template #img>
-            <img
-              class="d-block img-fluid w-100"
-              width="1024"
-              height="480"
-              src="https://picsum.photos/1024/480/?image=55"
-              alt="image slot"
-            />
-          </template>
-        </b-carousel-slide>
-
-        <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-        <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            eros felis, tincidunt a tincidunt eget, convallis vel est. Ut
-            pellentesque ut lacus vel interdum.
-          </p>
-        </b-carousel-slide>
-      </b-carousel>
+    <div class="logo masthead">
+      <b-img class="im_log"
+          src="../assets/bg-logo.png">
+      </b-img>
     </div>
 
     <div class="container">
@@ -70,7 +20,28 @@
       </div>
     </div>
     <div class="container">
-      <h1>Le scuole</h1>
+      <div class="scuole" ref="scuole">
+      <h1 style="text-align: center;" class="h1">Le scuole</h1>
+      <div style="display:flex; justify-content: space-around;" class="p">
+      <ul>
+        <li>Collegio Superiore Bologna</li>
+        <li>Scuola Superiore Catania </li>
+        <li>Scuola Normale Superiore</li>
+        <li>Scuola Superiore Sant'Anna </li>
+        <li>SSSAS Roma</li>
+        <li>SSST Torino</li>
+      </ul>
+      <ul>
+        <li>Scuola Galileiana Padova</li>
+        <li>Scuola di studi superiori Giacomo Leopardi</li>
+        <li>Scuola Superiore ISUFI</li>
+        <li>IUSS Padova</li>
+        <li>Scuola Superiore Udine</li>
+        <li>Collegio superiore Venezia</li>
+      </ul>
+    </div>
+    </div>
+
     </div>
   </div>
 </template>
@@ -115,13 +86,24 @@ export default {
 
     observer.observe(this.$refs.chisiamo);
     observer.observe(this.$refs.cosafacciamo);
+    observer.observe(this.$refs.scuole);
   },
 };
 </script>
 
-<style></style>
+<style>
 
-<style scoped>
+
+</style>
+
+<style scoped lang="scss">
+
+@import "../scss/styles.scss";
+
+
+.im_log{
+  margin: 50pt;
+}
 .h1 {
   opacity: 0.2;
   transition: all 2s;
@@ -137,11 +119,6 @@ export default {
   transform: translateX(0px);
   opacity: 1;
 }
-
-#carousel-1 {
-  width: 100%;
-}
-
 .scroll {
   height: 100%;
   overflow: auto;
@@ -149,15 +126,26 @@ export default {
 }
 
 .logo {
+  height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-image: url("../assets/Foto1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .container {
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: top;
   padding: 50px;
+}
+
+.scuole {
+  width: 100%;
+  vertical-align: center;
 }
 
 .chi {
