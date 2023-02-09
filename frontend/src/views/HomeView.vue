@@ -68,16 +68,16 @@ export default {
   },
 
   mounted() {
-    console.log(this.$refs);
+    //console.log(this.$refs);
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          console.log(entry);
-          console.log(this);
+          //console.log(entry);
+          //console.log(this);
           this.show = true;
 
           for (let e of entry.target.children) {
-            console.log(e);
+            //console.log(e);
             e.classList.add("h1-new");
           }
         }
