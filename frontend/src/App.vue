@@ -11,7 +11,7 @@
       </div>
     </nav>
     <div >
-    <router-view />
+    <router-view v-on:event="navbarShrink"/>
     </div>
   </div>
 </template>
@@ -25,15 +25,17 @@ export default {
   name: "App",
   data : () => ({
       isBlack:false
-  }),
+  }), 
 
   mounted() {
+
+    let isBlack = this.isBlack;
     let navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
         if (!navbarCollapsible) {
             return;
         }
-        if (window.scrollY === 0) {
+        if (window.scrollY === 0 && isBlack == false) {
             navbarCollapsible.classList.remove('navbar-shrink')
         } else {
             navbarCollapsible.classList.add('navbar-shrink')

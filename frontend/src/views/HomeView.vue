@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid" style="padding:0">
     <div class="logo masthead">
       <b-img class="im_log"
           src="../assets/bg-logo.png">
@@ -24,7 +24,7 @@
       <h1 style="text-align: center;" class="h1">Le scuole</h1>
       <div style="display:flex; justify-content: space-around;" class="p">
       <ul>
-        <li>Collegio Superiore Bologna</li>
+        <li><a href="/scuola">Collegio Superiore Bologna</a></li>
         <li>Scuola Superiore Catania </li>
         <li>Scuola Normale Superiore</li>
         <li>Scuola Superiore Sant'Anna </li>
@@ -102,7 +102,7 @@ export default {
 
 
 .im_log{
-  margin: 50pt;
+  margin: 0pt;
 }
 .h1 {
   opacity: 0.2;
