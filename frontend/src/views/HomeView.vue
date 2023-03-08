@@ -1,47 +1,49 @@
 <template>
-  <div class="container-fluid" style="padding:0">
+  <!-- CONTAINER  -->
+  <div class="container-fluid" style="padding: 0">
+    <!-- LOGO RIASISSU  -->
     <div class="logo masthead">
-      <b-img class="im_log"
-          src="../assets/bg-logo.png">
-      </b-img>
+      <b-img class="im_log" src="../assets/bg-logo.png"> </b-img>
     </div>
 
+    <!-- PARAGRAFI  -->
     <div class="container">
+      <!-- CHISIAMO -->
       <div ref="chisiamo">
         <h1 class="h1">Chi Siamo?</h1>
-        <p class="p">Un associazione di studenti che</p>
-        <p class="p">vuole salvare il mondo</p>
-        <p class="p">dalla prossima invasione aliena</p>
+        <p class="p">Lorem Ipsum</p>
       </div>
 
+      <!-- COSA FACCIAMO -->
       <div ref="cosafacciamo">
         <h1 class="h1">Cosa facciamo?</h1>
         <p class="p">lorem ipsum</p>
       </div>
     </div>
+
+    <!-- LE SCUOLE -->
     <div class="container">
       <div class="scuole" ref="scuole">
-      <h1 style="text-align: center;" class="h1">Le scuole</h1>
-      <div style="display:flex; justify-content: space-around;" class="p">
-      <ul>
-        <li><a href="/scuola">Collegio Superiore Bologna</a></li>
-        <li>Scuola Superiore Catania </li>
-        <li>Scuola Normale Superiore</li>
-        <li>Scuola Superiore Sant'Anna </li>
-        <li>SSSAS Roma</li>
-        <li>SSST Torino</li>
-      </ul>
-      <ul>
-        <li>Scuola Galileiana Padova</li>
-        <li>Scuola di studi superiori Giacomo Leopardi</li>
-        <li>Scuola Superiore ISUFI</li>
-        <li>IUSS Padova</li>
-        <li>Scuola Superiore Udine</li>
-        <li>Collegio superiore Venezia</li>
-      </ul>
-    </div>
-    </div>
-
+        <h1 style="text-align: center" class="h1">Le scuole</h1>
+        <div style="display: flex; justify-content: space-around" class="p">
+          <ul>
+            <li><a href="/scuola">Collegio Superiore Bologna</a></li>
+            <li>Scuola Superiore Catania</li>
+            <li>Scuola Normale Superiore</li>
+            <li>Scuola Superiore Sant'Anna</li>
+            <li>SSSAS Roma</li>
+            <li>SSST Torino</li>
+          </ul>
+          <ul>
+            <li>Scuola Galileiana Padova</li>
+            <li>Scuola di studi superiori Giacomo Leopardi</li>
+            <li>Scuola Superiore ISUFI</li>
+            <li>IUSS Padova</li>
+            <li>Scuola Superiore Udine</li>
+            <li>Collegio superiore Venezia</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -91,18 +93,13 @@ export default {
 };
 </script>
 
-<style>
-
-
-</style>
+<style></style>
 
 <style scoped lang="scss">
-
 @import "../scss/styles.scss";
 
-
-.im_log{
-  margin: 0pt;
+.im_log {
+  margin: 10pt;
 }
 .h1 {
   opacity: 0.2;

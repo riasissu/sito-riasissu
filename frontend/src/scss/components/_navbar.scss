@@ -23,9 +23,11 @@
         letter-spacing: $headings-letter-spacing;
         text-transform: uppercase;
 
+        /*
         img {
             height: 3rem;
         }
+        */
     }
 
     .navbar-nav {
@@ -56,13 +58,15 @@
             padding-bottom 0.3s ease-in-out;
 
         .navbar-brand {
-            font-size: 1.5em;
+            font-size: 2.5em;
             transition: font-size 0.3s ease-in-out;
 
+            /*
             img {
                 height: 2rem;
                 transition: height 0.3s ease-in-out;
             }
+            */
         }
 
         // Styling for when the navbar shrinks on larger screens
@@ -72,7 +76,7 @@
             background-color: $gray-900;
 
             .navbar-brand {
-                font-size: 1.25em;
+                font-size: 2em;
 
                 svg,
                 img {
