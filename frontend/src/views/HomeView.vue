@@ -25,16 +25,16 @@
     <div class="container">
       <div class="scuole" ref="scuole">
         <h1 style="text-align: center" class="h1">Le scuole</h1>
-        <div style="display: flex; justify-content: space-around" class="p">
-          <ul>
-            <li><a href="/scuola">Collegio Superiore Bologna</a></li>
+        <div class="p container">
+          <ul style="list-style: none; padding:0pt; margin-bottom: 0pt;">
+            <li>Collegio Superiore Bologna</li>
             <li>Scuola Superiore Catania</li>
             <li>Scuola Normale Superiore</li>
             <li>Scuola Superiore Sant'Anna</li>
             <li>SSSAS Roma</li>
             <li>SSST Torino</li>
           </ul>
-          <ul>
+          <ul style="list-style: none;padding:0pt;">
             <li>Scuola Galileiana Padova</li>
             <li>Scuola di studi superiori Giacomo Leopardi</li>
             <li>Scuola Superiore ISUFI</li>
@@ -53,7 +53,7 @@ export default {
   data: () => ({
     show: false,
     slide: 0,
-    sliding: null,
+    sliding: null,c
   }),
 
   name: "HomeView",
@@ -98,10 +98,23 @@ export default {
 <style scoped lang="scss">
 @import "../scss/styles.scss";
 
-.im_log {
+/*.im_log {
   margin: 10pt;
+}*/
+
+.scroll {
+  height: 100%;
+  overflow:auto;
+  background-color: white;
 }
-.h1 {
+
+
+@media only screen and (min-width: 600px) {
+  .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+  .h1 {
   opacity: 0.2;
   transition: all 2s;
   transform: translateX(100px);
@@ -116,10 +129,19 @@ export default {
   transform: translateX(0px);
   opacity: 1;
 }
-.scroll {
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    align-content: center;
+    text-align: center;
+  }
+}
+
+.container {
   height: 100%;
-  overflow: auto;
-  background-color: white;
+  padding: 20px;
 }
 
 .logo {
@@ -130,19 +152,13 @@ export default {
   background-image: url("../assets/Foto1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.container {
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: top;
-  padding: 50px;
+  background-position-x: center;
 }
 
 .scuole {
   width: 100%;
   vertical-align: center;
+  text-align: center;
 }
 
 .chi {

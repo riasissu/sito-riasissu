@@ -8,7 +8,7 @@
       <div class="container"><a class="navbar-brand" href="/">RIASISSU</a>
 
          <!-- NAVBAR TOGGLE BUTTON -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ms-1"></i></button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ms-0"></i></button>
         
         <!-- NAVBAR  MENU   -->
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -40,7 +40,9 @@ export default {
 
   mounted() {
 
-    document.title="Riasissu";
+    
+
+    document.title="RIASISSU";
 
     let isBlack = this.isBlack;
     let navbarShrink = function () {
