@@ -40,7 +40,7 @@ export default {
 
   mounted() {
 
-    document.title="Riasissu"
+    document.title="Riasissu";
 
     let isBlack = this.isBlack;
     let navbarShrink = function () {
