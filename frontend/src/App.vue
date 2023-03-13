@@ -40,6 +40,8 @@ export default {
 
   mounted() {
 
+    document.title="Riasissu"
+
     let isBlack = this.isBlack;
     let navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
