@@ -50,49 +50,49 @@ export default{
             posizione:[45.07114909518141, 7.697363869233653],
             nome:"",
             descrizione:"",
-            id:7
+            id:6
         },
         {
             citta:"Catania",
             posizione:[37.51774369576755, 15.073255968371292],
             nome:"",
             descrizione:"",
-            id:8
+            id:7
         },
         {
             citta:"Roma",
             posizione:[41.905304514866685, 12.516402426824817],
             nome:"SSAS",
             descrizione:"",
-            id:9
+            id:8
         },
         {
             citta:"Macerata",
             posizione:[43.30022677671431, 13.452283725012233],
             nome:"SSS Giacomo Leopardi",
             descrizione:"",
-            id:10
+            id:9
         },
         {
             citta:"Bologna",
             posizione:[44.514736476646675, 11.320873826889851],
             nome:"Alma Mater Studiorum Universita Di Bologna ",
             descrizione:"",
-            id:11
+            id:10
         },
         {
             citta:"Salerno",
             posizione:[40.33677543555516, 18.12434998261121],
             nome:"",
             descrizione:"",
-            id:12
+            id:11
         },
         {
             citta:"Venezia",
             posizione:[45.433145637957125, 12.31417017901805],
             nome:"",
             descrizione:"",
-            id:13
+            id:12
         },
     ],
     inizio:[47.4,6],
