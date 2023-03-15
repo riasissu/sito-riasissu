@@ -1,91 +1,79 @@
-<!--<template>
-<v-app>
-
-  <v-row class="pa-5" >
-    <v-col class="pl-8">
-      <router-link to="/scuole">Scuole</router-link>
-      <router-link class="pl-4" to="/chiasmo">Chiasmo</router-link>
-      <router-link class="pl-4" to="/xcool">Xcool</router-link>
-      <router-link class="pl-4" to="/reteidee">Rete di idee</router-link>
-    </v-col>
-    
-    <v-spacer></v-spacer>
-    
-    <v-col>
-    <router-link  to="/" class="text-decoration-none " >
-      <p class="text-h3 " style="color:black"  > RIASISSU</p>
-    </router-link>
-    
-   </v-col>
-  <v-spacer></v-spacer>
-
-  <v-col>
-    <router-link class="pr-4" to="/login"><v-btn color="primary" >Login</v-btn></router-link>
-    <router-link to="/signup"><v-btn outlined color="primary ">Registrati</v-btn></router-link>
-  </v-col>
-  </v-row>
-
-  <v-main>
-    <router-view />
-  </v-main>
-
-  </v-app>
-</template>-->
-
 <template>
-  <v-app>
+  <!-- NAVBAR -->
+  <div>
+    
+    <nav class= "navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
 
-    <v-app-bar app elevation="0" color="grey lighten-5">
+      <!-- NAVBAR BRAND -->
+      <div class="container"><a class="navbar-brand" href="/">RIASISSU</a>
 
-      <div class="text-h2 ma-10" color="grey lighten-5">
-        <router-link to="/">RIASISSU</router-link>
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <span class="ma-5">
-        <router-link to="/scuole">Scuole</router-link>
-      </span>
-
-      <span class="ma-5">
-        <router-link to="/chiasmo">Chiasmo</router-link>
-      </span>
-
-      <span class="ma-5">
-        <router-link to="/reteidee">Rete di idee</router-link>
-      </span>
-
-      <span class="ma-5">
-        <router-link to="/scuole">Scuole</router-link>
-      </span>
-
-      <div>
-
-        <router-link class="pr-4" to="/login">
-          <v-btn color="primary" class="ma-5">Login</v-btn>
-        </router-link>
-
-        <router-link to="/signup">
-          <v-btn outlined color="primary ">Registrati</v-btn>
-        </router-link>
+         <!-- NAVBAR TOGGLE BUTTON -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ms-0"></i></button>
+        
+        <!-- NAVBAR  MENU   -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#services">Le Scuole</a></li>
+          </ul>
+        </div>
 
       </div>
 
+    </nav>
 
-    </v-app-bar>
-
-    <v-main>
+    <!-- PAGE -->
+    <div >
       <router-view />
-    </v-main>
-
-  </v-app>
+    </div>
+  </div>
 </template>
 
 <script>
 
-import './firebase/initialize'
+import "./firebase/initialize";
 
 export default {
-  name: "App"
-};
+  name: "App",
+  data : () => ({
+      isBlack:false
+  }), 
+
+  mounted() {
+
+    
+
+    document.title="RIASISSU";
+
+    let isBlack = this.isBlack;
+    let navbarShrink = function () {
+        const navbarCollapsible = document.body.querySelector('#mainNav');
+        if (!navbarCollapsible) {
+            return;
+        }
+        if (window.scrollY === 0 && isBlack == false) {
+            navbarCollapsible.classList.remove('navbar-shrink')
+        } else {
+            navbarCollapsible.classList.add('navbar-shrink')
+        }
+
+    };
+    navbarShrink();
+
+    // On scroll, run navbarShrink function and collapse navbar if scrollY > 0
+    document.addEventListener('scroll', navbarShrink);
+
+  },
+}
+
+
 </script>
+
+<style scoped lang="scss">
+
+@import "./scss/styles.scss";
+.scroll {
+  height: 100%;
+  overflow:auto;
+  background-color: white;
+}
+</style>
