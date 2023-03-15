@@ -5,7 +5,7 @@
     <nav class= "navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
 
       <!-- NAVBAR BRAND -->
-      <div class="container"><a class="navbar-brand" href="/">RIASISSU</a>
+      <div class="container"><router-link to="/" class="navbar-brand">RIASISSU</router-link>
 
          <!-- NAVBAR TOGGLE BUTTON -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ms-0"></i></button>
@@ -13,7 +13,7 @@
         <!-- NAVBAR  MENU   -->
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#services">Le Scuole</a></li>
+            <li class="nav-item">    <router-link to="/mappa" class="nav-link" >Le Scuole</router-link></li>
           </ul>
         </div>
 
