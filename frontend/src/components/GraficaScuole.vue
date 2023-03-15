@@ -2,7 +2,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="col">
+            <div class="col" id="cartina">
                 <MappaScuole @cambioScuola="cambiaScuola" :posAttiva="(!!scuolaAttiva)?scuolaAttiva.posizione:[10,10]"></MappaScuole>
             </div>
             
@@ -105,6 +105,10 @@ export default {
   background-color: white;
 }
 
+@media only screen and (max-width: 600px) {
 
-
+    #cartina{
+        display:  none;
+    }
+}
 </style>
