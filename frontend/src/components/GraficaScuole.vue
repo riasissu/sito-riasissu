@@ -1,50 +1,53 @@
 <template>
-    <div>
-        <v-container>
+    <div class="container">
 
-        <v-row>
-            <v-col>
+        <div class="row">
+            <div class="col">
                 <MappaScuole @cambioScuola="cambiaScuola" :posAttiva="(!!scuolaAttiva)?scuolaAttiva.posizione:[10,10]"></MappaScuole>
-            </v-col>
-            <v-col justify="center">
-                <v-card  max-width="600" v-if="scuolaAttiva!=null">
-                    <v-img
+            </div>
+            
+            <div class="col"  style="width: 600px;">
+                
+                
+                <div class="card"   v-if="scuolaAttiva!=null ">
+                    
+                    <img class="card-img"
                         v-if="scuolaAttiva.img"
                             max-width="600"
                             :src="require('@/assets/imgs_scuole/'+scuolaAttiva.img)"
-                        ></v-img>
-                    <v-card-title >{{scuolaAttiva.nome}}</v-card-title>
-                    <v-card-subtitle>
-                        <span class=" font-weight-medium"> Citta:</span>
-                        <span class=" font-weight-bold"> {{scuolaAttiva.citta}}</span>
-                    </v-card-subtitle>
-                    <v-card-text>
-                        {{scuolaAttiva.descrizione}}
-                        <div v-if="scuolaAttiva.sito" class="mt-4">
-                            <span class="font-weight-bold mr-2">Sito:</span><a class="mt-5" :href="scuolaAttiva.sito">{{scuolaAttiva.sito}}</a>
+                        ><img>
+                    <div class="card-body">
+                        <h5 class="card-title" >{{scuolaAttiva.nome}}</h5>
+                        <!--<div class="card-subtitle">
+                            <span class=" font-weight-medium"> Citta:</span>
+                            <span class=" font-weight-bold"> {{scuolaAttiva.citta}}</span>
+                        </div>-->
+                        <div class="card-text">
+                            {{scuolaAttiva.descrizione}}
+                            <div v-if="scuolaAttiva.sito" class="mt-4">
+                                <span class="font-weight-bold mr-2">Sito:</span><a class="mt-5" :href="scuolaAttiva.sito">{{scuolaAttiva.sito}}</a>
+                            </div>
+                            <div class="mt-3">
+                                <a class="stretched-link" @click="scuolaAttiva=null" >Torna alla lista</a>
+                            </div>
                         </div>
-                        <div class="mt-3">
-                            <a @click="scuolaAttiva=null" >Torna alla lista</a>
-                        </div>
-                    </v-card-text>
-                    
-                </v-card>
-                <v-card v-else>
-                    <v-card-title>
-                        Benvenuto nel sito della RIASISSU
-                    </v-card-title>
-                    <v-card-subtitle>
-                        Seleziona una scuola tra quelle in elenco
-                    </v-card-subtitle>
-                    <v-card-text>
-                        <v-list dense><v-list-item-group>
-                        <v-list-item   v-for="s in listaScuole" @click="cambiaScuola(s.id)" :key="s.id">
+                    </div>
+                
+                </div>
+                <div v-else class="card">
+                    <div class="card-body">
+                    <h5 class="card-title pb-2 pl-4  " style="align:center">
+                        Le scuole dalle RIASISSU
+                    </h5>
+                    <ul class="list-group list-group-flush " style="list-style: none; ">
+                        
+                        <li  class="list-group-item stretched-link"  v-for="s in listaScuole" @click="cambiaScuola(s.id)" :key="s.id">
                             {{ s.nome +" di "+ s.citta}}
-                        </v-list-item>
-                        </v-list-item-group>
-                        </v-list>
-                    </v-card-text>
-                </v-card>
+                        </li>
+                        
+                    </ul
+                    ></div>
+                </div>
                 <!--
                 <v-container v-if="scuolaAttiva!=null"> 
                     <v-row justify="center">
@@ -63,9 +66,9 @@
                         </span>
                     </div>
                 </v-container>-->
-            </v-col>
-        </v-row>
-        </v-container>
+            </div>
+            
+        </div>
         
     </div>
 </template>
@@ -91,6 +94,17 @@ export default {
     },
 }
 </script>
-<style >
+
+
+<style scoped lang="scss">
+
+@import "../scss/styles.scss";
+.scroll {
+  height: 100%;
+  overflow:auto;
+  background-color: white;
+}
+
+
 
 </style>

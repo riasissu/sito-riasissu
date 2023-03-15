@@ -53,7 +53,7 @@ export default {
   data: () => ({
     show: false,
     slide: 0,
-    sliding: null,c
+    sliding: null,
   }),
 
   name: "HomeView",
@@ -102,11 +102,6 @@ export default {
   margin: 10pt;
 }*/
 
-.scroll {
-  height: 100%;
-  overflow:auto;
-  background-color: white;
-}
 
 
 @media only screen and (min-width: 600px) {

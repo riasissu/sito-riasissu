@@ -71,5 +71,9 @@ export default {
 <style scoped lang="scss">
 
 @import "./scss/styles.scss";
-
+.scroll {
+  height: 100%;
+  overflow:auto;
+  background-color: white;
+}
 </style>
