@@ -1,94 +1,94 @@
 export default{
     listaScuole:[
         {
-            citta:"Udine",
+            citta:"",
             posizione:[46.06982650739168, 13.234095393013046],
-            nome:"Scuola Superiore dell'Università degli sturi di Udine",
-            descrizione:"Vieni a Udine",
+            nome:"",
+            descrizione:"",
             id:1,
-            sito:'https://scuolasuperiore.uniud.it/',
-            img:'supe-udine.jpeg'
+            sito:'',
+            img:''
         },
         {
-            citta:"Padova",
+            citta:"",
             posizione:[45.410318542923285, 11.895031184583555],
-            nome:"Scuola Galileiana",
-            descrizione:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis non placeat, quos corporis obcaecati cupiditate est excepturi eos hic molestiae amet quo, officia perspiciatis consectetur id ipsa fugiat voluptate nesciunt!" ,
+            nome:"",
+            descrizione:"" ,
             id:2,
-            sito:"https://www.unipd-scuolagalileiana.it/",
-            img:'galileiana-padova.jpg'
+            sito:"",
+            img:''
         },
         {
-            citta:"Pisa",
+            citta:"",
             posizione:[43.6, 10.400438438165256],
-            nome:"Scuola Normale Superiore",
-            descrizione:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis non placeat, quos corporis obcaecati cupiditate est excepturi eos hic molestiae amet quo, officia perspiciatis consectetur id ipsa fugiat voluptate nesciunt!",
+            nome:"",
+            descrizione:"",
             id:3,
-            sito:'https://www.sns.it/it',
-            img:'normale-pisa.jpg'
+            sito:'',
+            img:''
         },
         { /* Posizioni modificate per essere distinte */
-            citta:"Pisa",
+            citta:"",
             posizione:[43.8, 10.40273496891617],
-            nome:"Sant'Anna",
+            nome:"",
             descrizione:"",
             id:4,
-            sito:'https://www.santannapisa.it/it',
-            img:'santanna-pisa.jpg'
+            sito:'',
+            img:''
         },
         {
-            citta:"Pavia",
+            citta:"",
             posizione:[45.18484990797697, 9.154252526907126],
-            nome:"IUSS Pavia",
-            descrizione:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis non placeat, quos corporis obcaecati cupiditate est excepturi eos hic molestiae amet quo, officia perspiciatis consectetur id ipsa fugiat voluptate nesciunt!",
+            nome:"",
+            descrizione:"",
             id:5,
-            sito:'https://www.iusspavia.it/it',
-            img:'iuss-pavia.png'
+            sito:'',
+            img:''
         },
         {
-            citta:"Torino",
+            citta:"",
             posizione:[45.07114909518141, 7.697363869233653],
             nome:"",
             descrizione:"",
             id:6
         },
         {
-            citta:"Catania",
+            citta:"",
             posizione:[37.51774369576755, 15.073255968371292],
             nome:"",
             descrizione:"",
             id:7
         },
         {
-            citta:"Roma",
+            citta:"",
             posizione:[41.905304514866685, 12.516402426824817],
-            nome:"SSAS",
+            nome:"",
             descrizione:"",
             id:8
         },
         {
-            citta:"Macerata",
+            citta:"",
             posizione:[43.30022677671431, 13.452283725012233],
-            nome:"SSS Giacomo Leopardi",
+            nome:"",
             descrizione:"",
             id:9
         },
         {
-            citta:"Bologna",
+            citta:"",
             posizione:[44.514736476646675, 11.320873826889851],
-            nome:"Alma Mater Studiorum Universita Di Bologna ",
+            nome:" ",
             descrizione:"",
             id:10
         },
         {
-            citta:"Salerno",
+            citta:"",
             posizione:[40.33677543555516, 18.12434998261121],
             nome:"",
             descrizione:"",
             id:11
         },
         {
-            citta:"Venezia",
+            citta:"",
             posizione:[45.433145637957125, 12.31417017901805],
             nome:"",
             descrizione:"",
