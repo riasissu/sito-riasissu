@@ -1,7 +1,7 @@
 export default{
     listaScuole:[
         {
-            citta:"",
+            citta:"",  //Udine
             posizione:[46.06982650739168, 13.234095393013046],
             nome:"",
             descrizione:"",
@@ -10,7 +10,7 @@ export default{
             img:''
         },
         {
-            citta:"",
+            citta:"",  // Padova
             posizione:[45.410318542923285, 11.895031184583555],
             nome:"",
             descrizione:"" ,
@@ -19,7 +19,7 @@ export default{
             img:''
         },
         {
-            citta:"",
+            citta:"",  //Normale
             posizione:[43.6, 10.400438438165256],
             nome:"",
             descrizione:"",
@@ -28,7 +28,7 @@ export default{
             img:''
         },
         { /* Posizioni modificate per essere distinte */
-            citta:"",
+            citta:"",     //Sant'Anna
             posizione:[43.8, 10.40273496891617],
             nome:"",
             descrizione:"",
@@ -37,7 +37,7 @@ export default{
             img:''
         },
         {
-            citta:"",
+            citta:"",  //Pavia
             posizione:[45.18484990797697, 9.154252526907126],
             nome:"",
             descrizione:"",
@@ -46,49 +46,49 @@ export default{
             img:''
         },
         {
-            citta:"",
+            citta:"",   // torino
             posizione:[45.07114909518141, 7.697363869233653],
             nome:"",
             descrizione:"",
             id:6
         },
         {
-            citta:"",
+            citta:"",       // catania
             posizione:[37.51774369576755, 15.073255968371292],
             nome:"",
             descrizione:"",
             id:7
         },
         {
-            citta:"",
+            citta:"",    // Roma
             posizione:[41.905304514866685, 12.516402426824817],
             nome:"",
             descrizione:"",
             id:8
         },
         {
-            citta:"",
+            citta:"",    // macerata
             posizione:[43.30022677671431, 13.452283725012233],
             nome:"",
             descrizione:"",
             id:9
         },
         {
-            citta:"",
+            citta:"",    // bologna
             posizione:[44.514736476646675, 11.320873826889851],
             nome:" ",
             descrizione:"",
             id:10
         },
         {
-            citta:"",
+            citta:"",  // lecce
             posizione:[40.33677543555516, 18.12434998261121],
             nome:"",
             descrizione:"",
             id:11
         },
         {
-            citta:"",
+            citta:"",   // venezia
             posizione:[45.433145637957125, 12.31417017901805],
             nome:"",
             descrizione:"",

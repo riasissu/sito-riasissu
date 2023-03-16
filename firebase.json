@@ -1,20 +1,19 @@
 {
+  "hosting": {
+    "public": "frontend/dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "emulators": {
     "hosting": {
-      "public": "./frontend/dist",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
+      "port": 5000
     },
-    "emulators": {
-      "hosting": {
-        "port": 5000
-      },
-      "ui": {
-        "enabled": true
-      },
-      "singleProjectMode": true
-    }
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": true
   }
-  
+}

@@ -42,7 +42,7 @@
                     <ul class="list-group list-group-flush " style="list-style: none; ">
                         
                         <li  class="list-group-item stretched-link"  v-for="s in listaScuole" @click="cambiaScuola(s.id)" :key="s.id">
-                            {{ s.nome +" di "+ s.citta}}
+                            {{ s.nome +"  "+ s.citta}}
                         </li>
                         
                     </ul

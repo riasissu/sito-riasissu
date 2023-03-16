@@ -1,6 +1,6 @@
 {
   "projects": {
-    "default": "riasissu",
+    "default": "sito-riasissu",
     "sito-riasissu": "sito-riasissu"
   },
   "targets": {},
