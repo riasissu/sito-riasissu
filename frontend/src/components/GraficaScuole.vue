@@ -17,7 +17,7 @@
                             :src="require('@/assets/imgs_scuole/'+scuolaAttiva.img)"
                         ><img>
                     <div class="card-body">
-                        <h5 class="card-title" >{{scuolaAttiva.nome}}</h5>
+                        <h5 class="card-title" >{{scuolaAttiva.nome + " di " + scuolaAttiva.citta}}</h5>
                         <!--<div class="card-subtitle">
                             <span class=" font-weight-medium"> Citta:</span>
                             <span class=" font-weight-bold"> {{scuolaAttiva.citta}}</span>
@@ -25,10 +25,10 @@
                         <div class="card-text">
                             {{scuolaAttiva.descrizione}}
                             <div v-if="scuolaAttiva.sito" class="mt-4">
-                                <span class="font-weight-bold mr-2">Sito:</span><a class="mt-5" :href="scuolaAttiva.sito">{{scuolaAttiva.sito}}</a>
+                                <span class="font-weight-bold mr-2">Sito: </span><a class="mt-5" :href="scuolaAttiva.sito">{{scuolaAttiva.sito}}</a>
                             </div>
                             <div class="mt-3">
-                                <a class="stretched-link" @click="scuolaAttiva=null" >Torna alla lista</a>
+                                <a  @click="scuolaAttiva=null" href="#cartina" >Torna alla lista</a>
                             </div>
                         </div>
                     </div>
@@ -37,12 +37,12 @@
                 <div v-else class="card">
                     <div class="card-body">
                     <h5 class="card-title pb-2 pl-4  " style="align:center">
-                        Le scuole dalle RIASISSU
+                        Le scuole della RIASISSU
                     </h5>
                     <ul class="list-group list-group-flush " style="list-style: none; ">
                         
                         <li  class="list-group-item stretched-link"  v-for="s in listaScuole" @click="cambiaScuola(s.id)" :key="s.id">
-                            {{ s.nome +"  "+ s.citta}}
+                            {{ s.nome +" di "+ s.citta}}
                         </li>
                         
                     </ul
@@ -88,7 +88,6 @@ export default {
     components: { MappaScuole, },
     methods: {
         cambiaScuola(s){
-            console.log(s)
             this.scuolaAttiva=datiScuole.listaScuole[s-1]
         }
     },

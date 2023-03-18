@@ -23,11 +23,11 @@
 
     <!-- LE SCUOLE -->
     <div class="container">
-      <div class="scuole" ref="scuole">
+    <!--  <div class="scuole" ref="scuole">
         <h1 style="text-align: center" class="h1">Le scuole</h1>
         <div class="p container">
           <ul style="list-style: none; padding:0pt; margin-bottom: 0pt;">
-            <li>Collegio Superiore Bologna</li>
+            <li>{{listaScuole[0].nome +   " di "}}</li>
             <li>Scuola Superiore Catania</li>
             <li>Scuola Normale Superiore</li>
             <li>Scuola Superiore Sant'Anna</li>
@@ -44,16 +44,25 @@
           </ul>
         </div>
       </div>
+          -->
     </div>
+    
+
   </div>
 </template>
 
 <script>
+
+import datiScuole from '@/storage'
+
 export default {
+
+
   data: () => ({
     show: false,
     slide: 0,
     sliding: null,
+    listaScuole : datiScuole.listaScuole
   }),
 
   name: "HomeView",
@@ -88,7 +97,7 @@ export default {
 
     observer.observe(this.$refs.chisiamo);
     observer.observe(this.$refs.cosafacciamo);
-    observer.observe(this.$refs.scuole);
+   // observer.observe(this.$refs.scuole);
   },
 };
 </script>
