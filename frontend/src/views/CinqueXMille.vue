@@ -6,12 +6,12 @@
   </div>
 
   <div class="container">
-    <div class="display-2" >
+    <div class="display-4 mt-2" >
 
       Dona il tuo 5x1000 alla RIASISSU
     </div>
   </div>
-  <div class="container-md pt-4">
+  <div class="container-md  pt-4">
       Basta indicare e chiedere di indicare il Codice Fiscale della RIASISSU nella sezione preposta nella propria dichiarazione dei redditi, riepilogato nella sintesi che segue:
   </div>
   <div class="container-sm pt-3">
