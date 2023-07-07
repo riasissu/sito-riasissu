@@ -14,6 +14,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
             <li class="nav-item">    <router-link to="/mappa" class="nav-link" >Le Scuole</router-link></li>
+            <li class="nav-item">    <router-link to="/5x1000" class="nav-link" >5X1000</router-link></li>
           </ul>
         </div>
 

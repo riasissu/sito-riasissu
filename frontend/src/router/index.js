@@ -1,14 +1,35 @@
-import { app } from '../main'
 import { createRouter, createWebHistory } from 'vue-router'
+import SchoolView from "../views/SchoolView.vue";
+import MappaView from "../views/MappaView.vue";
 import HomeView from '../views/HomeView.vue'
-
+import CinqueXMille from "../views/CinqueXMille.vue"
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: "/",
+    name: "home",
+    component: HomeView,
   },
+
+  {
+    path: "/scuola",
+    name: "scuola",
+    component: SchoolView,
+  },
+  {
+    path: "/mappa",
+    name: "mappa",
+    component: MappaView,
+  },
+  {
+    path: "/5x1000",
+    name: "5x1000",
+    component: CinqueXMille,
+  },
+  
+];
+
+
 //  {
 //     path: '/about',
 //     name: 'about',
@@ -64,15 +85,12 @@ const routes = [
 //    name: '404',
 //    component: () => import(/* webpackChunkName: "about" */ '../views/Error404View.vue')  
 //  }
-]
+
 
 const router = createRouter({
   history: createWebHistory(),
   routes: routes,
 })
-
-app.use(router);
-
 
 
 export default router

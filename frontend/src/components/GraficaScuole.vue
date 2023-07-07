@@ -23,7 +23,7 @@
                             <span class=" font-weight-bold"> {{scuolaAttiva.citta}}</span>
                         </div>-->
                         <div class="card-text">
-                            {{scuolaAttiva.descrizione}}
+                            <span v-html="scuolaAttiva.descrizione"> </span>
                             <div v-if="scuolaAttiva.sito" class="mt-4">
                                 <span class="font-weight-bold mr-2">Sito: </span><a class="mt-5" :href="scuolaAttiva.sito">{{scuolaAttiva.sito}}</a>
                             </div>
