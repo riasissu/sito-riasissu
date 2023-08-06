@@ -3,8 +3,17 @@
   <div class="container-fluid" style="padding: 0">
   <div class="logo masthead">
       <b-img class="im_log" src="../assets/bg-logo.png"> </b-img>
+  </div>
+
+  <div class="container">
+    <div class="display-4 mt-2" >
+      
+      Le scuole della RIASISSU
+  </div>
+
     </div>
   <div class="container">
+    
     <GraficaScuole></GraficaScuole>
     </div>
   </div>
@@ -17,7 +26,6 @@ import GraficaScuole from '@/components/GraficaScuole.vue';
 
 export default {
   name: 'HomeView',
-
   components: {
     GraficaScuole
 },

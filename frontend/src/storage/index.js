@@ -3,7 +3,7 @@ export default{
         {
             citta:"Udine",  //Udine
             posizione:[46.06982650739168, 13.234095393013046],
-            nome:"Scuola Superiore Universitaria di Toppo Wasserman",
+            nome:"Scuola Superiore Universitaria di Toppo Wassermann",
             descrizione:`La Scuola Superiore Universitaria di Toppo Wassermann, attiva dal 2004, offre un percorso di formazione di eccellenza di carattere interdisciplinare, integrativo dei corsi di studio dell’Università di Udine. Essa si articola in due classi distinte: una classe Umanistica e una classe Scientifico-Economica (che comprende il corso di laurea in Medicina e Chirurgia). 
             <br>L’accesso è subordinato al superamento di un concorso di ammissione, il quale si rivolge ai futuri studenti del I e del IV anno. 
             <br>L’offerta formativa include corsi e seminari che mirano ad un apprendimento trasversale e partecipativo. 
@@ -55,8 +55,24 @@ export default{
         {
             citta:"Torino",   // torino
             posizione:[45.07114909518141, 7.697363869233653],
-            nome:"Scuola di Studi Superiori \"Ferdinando Rossi\"",
-            descrizione:'',
+            nome:"SSST \"Ferdinando Rossi\"",
+            descrizione:`
+            La Scuola di Studi Superiori dell’Università degli Studi di Torino, di seguito indicata SSST, offre corsi che integrano il percorso formativo seguito dagli studenti iscritti ai Corsi di Studio dell’Ateneo.<br>
+            L’ammissione alla SSST avviene per concorso nazionale pubblico, esclusivamente sulla base di criteri di merito.<br>
+            I criteri di permanenza consistono nella frequenza di corsi (da 3 o 6 cfu) e sostenimento dei relativi esami per un totale di 15 cfu all’anno per 5 anni. Agli Studenti è richiesto il mantenimento di una media di almeno 27 trentesimi, sia dei corsi SSST che di quelli di Ateneo.<br>
+            Gli studenti che rispettano i suddetti criteri fruiscono di:
+            <ul>
+                <li> ospitalità gratuita nelle residenze universitarie convenzionate</li>
+                <li> rimborso delle tasse universitarie</li>
+                <li> un contributo per lo studio. </li>
+            </ul>
+            I corsi della Scuola affiancano quelli a cui sono iscritti gli studenti, integrandoli sia nei contenuti sia nelle forme di insegnamento.<br>
+            Sono dedicati a temi di forte impatto socio-politico, con particolare attenzione allo sviluppo sostenibile, e affrontati integrando scienze umane e della natura. <br>
+
+            Il corpo docente è composto sia da professori dell'Università di Torino che da studiosi provenienti dall'esterno - dall'Italia e dall'estero - in qualità di visiting professor.
+
+
+            `,
             sito:"https://ssst.campusnet.unito.it/do/home.pl",
             id:6
         },
@@ -64,7 +80,20 @@ export default{
             citta:"Catania",       // catania
             posizione:[37.51774369576755, 15.073255968371292],
             nome:"Scuola Superiore",
-            descrizione:"",
+            descrizione:`
+            La Scuola Superiore di Catania è stata fondata nel 1998 all’interno dell’Università degli Studi di Catania.<br>
+
+Le prove del concorso di ammissione - rivolto agli studenti iscritti al I anno di un CdL triennale o magistrale a ciclo unico - si articolano in due Classi: la Classe delle Scienze umanistiche e sociali e la Classe delle Scienze sperimentali. <br>
+
+Il superamento delle prove di concorso garantisce agli Allievi vitto e alloggio gratuiti presso Villa San Saverio, nonché sussidi finanziari per esperienze di mobilità.<br>
+
+L’offerta formativa della Scuola si articola in una serie di corsi, differenziati negli anni: strumentali, interdisciplinari e di laboratorio (rivolti a studenti di primo e secondo anno); specialistici (affiancati all’attività di ricerca a partire dal terzo anno); corsi certificati di lingua straniera. <br>
+
+A partire dal secondo anno, gli Allievi individuano un docente tutor, che coordina l’attività di ricerca attraverso progetti di formazione negli ambiti disciplinari designati dall’Allievo.<br>
+
+La Scuola promuove periodi di soggiorno all’estero attraverso specifici contributi finanziari, nonché scambi presso le Università e istituzioni convenzionate.<br>
+
+Il percorso formativo si conclude mediante la stesura di una tesi di diploma, valevole come Master accademico di II livello.`,
             sito:"https://ssc.unict.it/",
             id:7
         },
@@ -121,7 +150,7 @@ export default{
         {
             citta:"Venezia",   // venezia
             posizione:[45.433145637957125, 12.31417017901805],
-            nome:"CICF",
+            nome:"Collegio Internazionale Ca’ Foscari",
             descrizione:`Fondato nel 2012, il Collegio Internazionale Ca’ Foscari è la Scuola Superiore Universitaria dell’Ateneo veneziano. 
             <br>I collegiali sono ospitati presso la residenza Camplus nel centro di Venezia. Le vocazioni primarie del Collegio sono l’interdisciplinarietà e l’internazionalità. 
             <br>La lingua ufficiale del Collegio è l’inglese e l’offerta formativa rimarca il modello anglosassone grazie ai tre percorsi minor che caratterizzano il percorso formativo triennale. 

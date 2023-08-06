@@ -1,30 +1,30 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import SchoolView from "../views/SchoolView.vue";
-import MappaView from "../views/MappaView.vue";
-import HomeView from '../views/HomeView.vue'
-import CinqueXMille from "../views/CinqueXMille.vue"
+//import SchoolView from "../views/SchoolView.vue";
+//import MappaView from "../views/MappaView.vue";
+//import HomeView from '../views/HomeView.vue'
+//import CinqueXMille from "../views/CinqueXMille.vue"
 
 const routes = [
   {
     path: "/",
     name: "home",
-    component: HomeView,
+    component:()=>import(/* webpackChunkName: "mappa" */ '../views/MappaView.vue'),//HomeView,  //TODO temp fix, mancano dati su cosa mettere in home view
   },
 
-  {
-    path: "/scuola",
-    name: "scuola",
-    component: SchoolView,
-  },
+//  {
+//    path: "/scuola",
+//    name: "scuola",
+//    component: SchoolView,
+//  },
   {
     path: "/mappa",
     name: "mappa",
-    component: MappaView,
+   component:()=>import(/* webpackChunkName: "mappa" */ '../views/MappaView.vue'),
   },
   {
     path: "/5x1000",
     name: "5x1000",
-    component: CinqueXMille,
+    component:()=>import(/* webpackChunkName: "5x1000" */ '../views/CinqueXMille.vue'),
   },
   
 ];

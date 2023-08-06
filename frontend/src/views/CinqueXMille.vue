@@ -6,24 +6,25 @@
   </div>
 
   <div class="container">
-    <div class="display-4 mt-2" >
+    <div class="display-4 p-4" >
 
       Dona il tuo 5x1000 alla RIASISSU
     </div>
   </div>
-  <div class="container-md  pt-4">
+
+  <div class="container  mt-2">
       Basta indicare e chiedere di indicare il Codice Fiscale della RIASISSU nella sezione preposta nella propria dichiarazione dei redditi, riepilogato nella sintesi che segue:
   </div>
-  <div class="container-sm pt-3">
-      <dl class="row">
-        <dt class="offset-sm-2 col-sm-3 text-truncate">Ragione sociale Associazione: </dt>
-        <dd class="col-sm-6">"RETE ITALIANA DELL3 ALLIEV3 DELLE SCUOLE E DEGLI ISTITUTI DI STUDI SUPERIORI UNIVERSITARI - APS"</dd>
-    
-        <dt class="offset-sm-2 col-sm-3">Codice fiscale Associazione: </dt>
-        <dd class="col-sm-6">93086750507</dd>
-      </dl>
+    <div class="container-sm pt-3">
+        <dl class="row">
+          <dt class="offset-sm-2 col-sm-3 text-truncate">Ragione sociale Associazione: </dt>
+          <dd class="col-sm-6">"RETE ITALIANA DELL3 ALLIEV3 DELLE SCUOLE E DEGLI ISTITUTI DI STUDI SUPERIORI UNIVERSITARI - APS"</dd>
       
-  </div>
+          <dt class="offset-sm-2 col-sm-3">Codice fiscale Associazione: </dt>
+          <dd class="col-sm-6">93086750507</dd>
+        </dl>
+        
+    </div>
   </div>
 
 </template>
