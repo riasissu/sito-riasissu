@@ -26,6 +26,12 @@ const routes = [
     name: "5x1000",
     component:()=>import(/* webpackChunkName: "5x1000" */ '../views/CinqueXMille.vue'),
   },
+  {
+    path: "/wip",
+    name: "wip",
+    component:()=>import(/* webpackChunkName: "5x1000" */ '../views/WorkInProgressView.vue'),
+  },
+
   
 ];
 
