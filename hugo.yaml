@@ -103,7 +103,7 @@ params:
       url: 'https://facebook.com/nusserstudios'
     instagram:
       enabled: true
-      url: 'https://instagram.com/nusserstudios'
+      url: 'https://instagram.com/riasissu'
     twitter:
       enabled: false
       url: '@nusserstudios'
