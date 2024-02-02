@@ -21,7 +21,7 @@ featured_image: images/organigramma.png
 **Scuola Superiore Di Toppo Wassermann**:
 
 - Francesco Decataldo
-- Danilo Avaro
+- Maddalena Feltrin
 
 **Scuola Galileiana di Studi Superiori di Padova**:
 
