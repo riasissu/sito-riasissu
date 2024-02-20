@@ -8,9 +8,18 @@ jobs:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
+      - name: "Get PR information"
+        uses: potiuk/get-workflow-origin@751d47254ef9e8b5eef955e24e79305233702781
+        id: source-run-info
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          sourceRunId: ${{ github.event.workflow_run.id }}
+      
       - uses: actions/checkout@v3
       - run: npm ci && npm run build
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
+        id: firebase-deploy
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SITO_RIASISSU }}'
@@ -25,7 +34,7 @@ jobs:
             (expires ${{ steps.firebase-deploy.outputs.expire_time }})`;
 
             github.rest.issues.createComment({
-              issue_number: ${{ steps.source-run-info.outputs.pullRequestNumber }},
+              issue_number: ${{ steps.source-run-info.outputs.pullRequestNumber },
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: body
