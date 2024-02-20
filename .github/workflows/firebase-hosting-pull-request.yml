@@ -15,3 +15,18 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SITO_RIASISSU }}'
           projectId: sito-riasissu
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            const body = `Visit the preview URL for this PR (for commit ${{ steps.source-run-info.outputs.sourceHeadSha }}):
+
+            ${{ steps.firebase-deploy.outputs.details_url }}
+
+            (expires ${{ steps.firebase-deploy.outputs.expire_time }})`;
+
+            github.rest.issues.createComment({
+              issue_number: ${{ steps.source-run-info.outputs.pullRequestNumber }},
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: body
+            })
