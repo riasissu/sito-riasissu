@@ -8,13 +8,11 @@ jobs:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
-      - name: "Get PR information"
-        uses: potiuk/get-workflow-origin@751d47254ef9e8b5eef955e24e79305233702781
-        id: source-run-info
+      - uses: jwalton/gh-find-current-pr@master
+        id: findPr
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          sourceRunId: ${{ github.event.workflow_run.id }}
-      
+      # Can be "open", "closed", or "all".  Defaults to "open".
+          state: open
       - uses: actions/checkout@v3
       - run: npm ci && npm run build
 
@@ -27,14 +25,14 @@ jobs:
       - uses: actions/github-script@v6
         with:
           script: |
-            const body = `Visit the preview URL for this PR (for commit ${{ steps.source-run-info.outputs.sourceHeadSha }}):
+            const body = `Visit the preview URL for this PR (for commit ${{ steps.findPr.outputs.number }}):
 
             ${{ steps.firebase-deploy.outputs.details_url }}
 
             (expires ${{ steps.firebase-deploy.outputs.expire_time }})`;
 
             github.rest.issues.createComment({
-              issue_number: ${{ steps.source-run-info.outputs.pullRequestNumber },
+              issue_number: ${{ steps.findPr.outputs.number} },
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: body
