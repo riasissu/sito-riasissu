@@ -1,0 +1,226 @@
+baseURL: ''
+title: RIASISSU
+languageCode: it-IT
+DefaultContentLanguage: it
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: true
+canonifyURLs: true
+paginate: 12
+darkmode_js:
+  - assets/js/darkmode.js
+enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: https
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer:
+        apostrophe: '&rsquo;'
+        disable: false
+        ellipsis: '&hellip;'
+        emDash: '&mdash;'
+        enDash: '&ndash;'
+        leftAngleQuote: '&laquo;'
+        leftDoubleQuote: '&ldquo;'
+        leftSingleQuote: '&lsquo;'
+        rightAngleQuote: '&raquo;'
+        rightDoubleQuote: '&rdquo;'
+        rightSingleQuote: '&rsquo;'
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+      wrapStandAloneImageWithinParagraph: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+
+params:
+  author: RIASISSU
+  authorimage: /images/bg-logo.png
+  og_image: /images/front.jpg
+  moto: "Rete Italiana degli Allievi delle Scuole e degli Istituti di Studi Superiori Universitari"
+  description: ""
+  disable_theme_toggle: false
+  disable_stay_uptodate: false
+
+  p1:
+    heading: "Chi siamo?"
+    image: "images/pages/xIMG_5204.jpg"
+    content:
+      - text: "La “Rete Italiana dellɜ Allievɜ delle Scuole e degli Istituti di Studi Superiori Universitari - APS” è un’associazione costituita nell’aprile 2016 e iscritta al RUNTS da maggio 2023. Ad essa prendono parte gli allievi di tutte le Scuole Superiori Universitarie italiane che condividono i principi dello Statuto dell’associazione. Ha principalmente due scopi: uno interno, ovvero creare connessioni fra gli allievi soci; uno esterno, cioè promuovere la cultura del merito nella collettività."
+  
+  # p2:
+  #   heading: "Le scuole"
+  #   image: "images/pages/hacktoberfest.jpg"
+  #   content:
+  #     - text: ""
+  # p3:
+  #   heading: "Backed by world-renowned investors"
+  #   content:
+  #     - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
+  #   links:
+  #     - text: Meet our investors and advisors
+  #       url: "#"
+  #   logos:
+  #     - identifier: a
+  #       image: "images/global/bg-logo.png"
+  #       alt: "a"
+  #     - identifier: b
+  #     - identifier: c
+  #     - identifier: d
+  #     - identifier: e
+  #     - identifier: f
+  # p4:
+  #   heading: "From the blog"
+  #   content:
+  #     - text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed."
+  p5:
+    heading: "Dona il 5x1000 alla RIASISSU"
+    content:
+      - text: "Puoi trovare tutte le informazioni al link sottostante:"
+    action: "/5x1000"
+    label: "Email address"
+    placeholder: "Enter your email"
+    button: "Dona ora!"
+
+  social_media:
+    github:
+      enabled: false
+      url: 'https://github.com/nusserstudios'
+    facebook:
+      enabled: false
+      url: 'https://facebook.com/nusserstudios'
+    instagram:
+      enabled: true
+      url: 'https://instagram.com/riasissu'
+    twitter:
+      enabled: false
+      url: '@nusserstudios'
+    
+
+menu:
+  main:
+    - identifier: scuole
+      name: Le Scuole
+      url: /scuole/
+      weight: 10
+    - identifier: associaone
+      pre: dropdown
+      name: L'associazione
+      weight: 30
+    - identifier: dropdown
+      pre: dropdown
+      name: Eventi e attività
+      weight: 40
+    - identifier: 5x1000
+      name: 5x1000
+      url: /5x1000/
+      weight: 50
+    - identifier: contact
+      name: Contatti
+      url: /contact/
+      weight: 50
+  associaone:
+    - identifier: organ
+      name: Organigramma
+      url: /organigramma/
+      weight: 10
+    - identifier: commissioni
+      name: Commissioni
+      url: /commissioni/
+      weight: 20
+  dropdown:
+    - identifier: chiasmo
+      name: Il Chiasmo
+      url: "/events/chiasmo"
+      weight: 10
+    # - identifier: edulia
+    #   name: Edulia
+    #   post: "Check your latest comments"
+    #   url: "#"
+    #   weight: 20
+    # - identifier: dibattito
+    #   name: Dibattito Competitivo
+    #   post: "Take a look at your statistics"
+    #   url: "#"
+    #   weight: 30
+    - identifier: retediidee
+      name: Rete di Idee
+      post: "Take a look at your statistics"
+      url: "/events/rete"
+      weight: 30
+    # - identifier: convegni
+    #   name: Convegni e conferenze
+    #   post: "Take a look at your statistics"
+    #   url: "#"
+    #   weight: 30
+    - identifier: scambi
+      name: Scambi interscuola
+      url: /scambi
+      weight: 40
+  footer:
+    - identifier: about
+      name: About
+      url: /
+      weight: 10
+    - identifier: scuole
+      name: Scuole
+      url: /scuole/
+      weight: 20
+    - identifier: 5x1000
+      name: 5x1000
+      url: /5x1000/
+      weight: 30
+    - identifier: contatti
+      name: Contatti
+      url: /contact/
+      weight: 50
+    - riservato:
+      name: Area riservata
+      url: riasissu.sharepoint.com/sites/RETEITALIANADELL3ALLIEV3DELLESCUOLEEDEGLIISTITUTIDISTUDISUPE
+      weight: 60
+
+
+
+taxonomies:
+  category: Categories
+  tag: Tags
+
+privacy:
+  disqus:
+    disable: false
+  googleAnalytics:
+    anonymizeIP: true
+    disable: false
+    respectDoNotTrack: false
+    useSessionStorage: false
+  instagram:
+    disable: false
+    simple: false
+  twitter:
+    disable: false
+    enableDNT: false
+    simple: false
+  vimeo:
+    disable: false
+    enableDNT: false
+    simple: false
+  youtube:
+    disable: false
+    privacyEnhanced: true
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.104.0"
