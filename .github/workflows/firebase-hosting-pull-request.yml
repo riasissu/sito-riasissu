@@ -4,33 +4,14 @@
 name: Deploy to Firebase Hosting on PR
 'on': pull_request
 jobs:
-  build_and_preview:
-    if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
+  build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: "run pre-deploy script"
-        uses: actions/checkout@v3
-        run: npm ci && npm run build
-      - name: "deploy on firebase"
-        uses: FirebaseExtended/action-hosting-deploy@v0
+      - uses: actions/checkout@v3
+      - run: npm ci && npm run build
+      - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SITO_RIASISSU }}'
+          channelId: live
           projectId: sito-riasissu
-      - name: comment URL to PR
-        if: ${{ steps.source-run-info.outputs.sourceEvent == 'pull_request' }}
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const body = `Visit the preview URL for this PR (for commit ${{ steps.source-run-info.outputs.sourceHeadSha }}):
-
-            ${{ steps.firebase-deploy.outputs.details_url }}
-
-            (expires ${{ steps.firebase-deploy.outputs.expire_time }})`;
-
-            github.rest.issues.createComment({
-              issue_number: ${{ steps.source-run-info.outputs.pullRequestNumber }},
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: body
-            })
