@@ -186,6 +186,10 @@ menu:
       name: Contatti
       url: /contact/
       weight: 50
+    - riservato:
+      name: Area riservata
+      url: riasissu.sharepoint.com/sites/RETEITALIANADELL3ALLIEV3DELLESCUOLEEDEGLIISTITUTIDISTUDISUPE
+      weight: 60
 
 
 
