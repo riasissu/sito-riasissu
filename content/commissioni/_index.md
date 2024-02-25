@@ -20,7 +20,7 @@ description: commissioni
 - Parità di genere
 - Società di dibattito
 - Accreditamento
-- Affari institituzionali
+- Affari istitituzionali
 - Merchandising
 
 ## Componenti delle commissioni:
