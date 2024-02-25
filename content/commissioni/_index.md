@@ -12,7 +12,7 @@ description: commissioni
 - Scambi-mobilità interscuole
 - Social
 - Treccani
-- Bilnacio
+- Bilancio
 - Orientamento
 - Rete di Idee
 - Servizi informativi e informatici
