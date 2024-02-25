@@ -131,6 +131,10 @@ menu:
       name: Contatti
       url: /contact/
       weight: 50
+    - riservato:
+      name: Area riservata
+      url: https://riasissu.sharepoint.com/sites/RETEITALIANADELL3ALLIEV3DELLESCUOLEEDEGLIISTITUTIDISTUDISUPE
+      weight: 60
   associaone:
     - identifier: organ
       name: Organigramma
