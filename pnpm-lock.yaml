@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   hugo-extended:
-    specifier: ^0.123.0
-    version: 0.123.3
+    specifier: ^0.123.8
+    version: 0.123.8
 
 devDependencies:
   '@tailwindcss/typography':
@@ -779,8 +779,8 @@ packages:
       resolve-alpn: 1.2.1
     dev: false
 
-  /hugo-extended@0.123.3:
-    resolution: {integrity: sha512-NfWuSoDfzqPgvY9xBaZ1VMEAeqoAuswW0pn4CcmnduVVyRXmTnpX0HdgG+tj6DtldJmMXHh24ZNnjdI9wus0yg==}
+  /hugo-extended@0.123.8:
+    resolution: {integrity: sha512-EudplT9MZRhDemli+8SleR8SuxBvwdaf4mCCd1yFUcV+YtM1M92Doc2+AadQn+Mf+znamk2vEIM5Q/YUKvQkeg==}
     engines: {node: '>=14.14'}
     hasBin: true
     requiresBuild: true
@@ -1641,7 +1641,7 @@ packages:
     resolution: {integrity: sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==}
     engines: {node: '>=18'}
     dev: true
-    
+
   /unique-string@3.0.0:
     resolution: {integrity: sha512-VGXBUVwxKMBUznyffQweQABPRRW1vHZAbadFZud4pLFAqRGvv/96vafgjWFqzourzr8YonlQiPgH0YCJfawoGQ==}
     engines: {node: '>=12'}
@@ -1699,7 +1699,7 @@ packages:
   /yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
     dev: false
-    
+
   /yaml@2.3.4:
     resolution: {integrity: sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==}
     engines: {node: '>= 14'}
