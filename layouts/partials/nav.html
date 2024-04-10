@@ -121,6 +121,9 @@
             </a>
             {{ end }}
             {{ end }}
+            {{ range $.Site.Home.AllTranslations }}
+            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+            {{ end }}
             {{ if not .Site.Params.Disable_theme_toggle }}
             <button id="theme-toggle" type="button"
                     class="p-2 text-sm text-gray-500 rounded-lg md: dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 md:ml-2 max-w-5 xs:hidden">
