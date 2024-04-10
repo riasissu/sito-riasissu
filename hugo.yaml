@@ -11,7 +11,7 @@ darkmode_js:
   - assets/js/darkmode.js
 enableInlineShortcodes: true
 
-language:
+languages:
   it:
     languageName: Italiano
     weight: 1
