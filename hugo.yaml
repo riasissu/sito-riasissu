@@ -1,7 +1,7 @@
-baseURL: ''
+baseURL: 'https://www.riasissu.it/'
 title: RIASISSU
-languageCode: it-IT
-DefaultContentLanguage: it
+defaultContentLanguage: it
+defaultContentLanguageInSubdir: true
 enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
@@ -10,6 +10,18 @@ paginate: 12
 darkmode_js:
   - assets/js/darkmode.js
 enableInlineShortcodes: true
+
+language:
+  it:
+    languageName: Italiano
+    weight: 1
+    contentDir: content/it
+    languageCode: it-IT
+  en:
+    languageName: English
+    weight: 2
+    contentDir: content/en
+    languageCode: en-US
 
 markup:
   goldmark:
