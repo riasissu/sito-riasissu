@@ -70,7 +70,7 @@ params:
   social_media:
     github:
       enabled: false
-      url: 'https://github.com/nusserstudios'
+      url: 'https://github.com/nusserstudioss'
     facebook:
       enabled: false
       url: 'https://facebook.com/nusserstudios'
