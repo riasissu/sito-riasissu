@@ -5,7 +5,7 @@ language: it
 description: orientamento
 ---
 
-Le allieve e gli allievi della RIASISSU vi invitano a partecipare alle giornate di orientiamento per conoscere le Scuole d'eccellenza e il mondo universitario in generale.
+Le allieve e gli allievi della RIASISSU vi invitano a partecipare alle giornate di orientiamento per conoscere le scuole d'eccellenza ed il mondo universitario in generale.
 
 ## Date degli eventi
 
