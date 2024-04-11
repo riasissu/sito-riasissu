@@ -2,7 +2,7 @@
     <div x-data="{ open: false }"
          class="flex flex-col max-w-full px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="flex flex-row items-center justify-between p-4">
-            <a href="/" class="flex text-gray-100 transition duration-1000 ease-in-out group">
+            <a href="/{{site.Language}}" class="flex text-gray-100 transition duration-1000 ease-in-out group">
                 <img src="/images/assets/LOGO.png"
                      class="transition-opacity h-9 w-9 group-hover:opacity-50 group-focus:opacity-70"
                      alt="{{ .Site.Title }} Logo" />
@@ -121,12 +121,14 @@
             </a>
             {{ end }}
             {{ end }}
-            {{ range $.Site.Home.AllTranslations }}
-            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+            {{ range .Translations }}
+            <button id="language-toggle" type="button" onclick = "location.href = '{{ .Permalink }}';"
+                    class="p-2 text-sm text-gray-500 rounded-lg md: dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 md:ml-2 max-w-10 xs:hidden">
+            {{ .Language.LanguageName }}</button>
             {{ end }}
             {{ if not .Site.Params.Disable_theme_toggle }}
             <button id="theme-toggle" type="button"
-                    class="p-2 text-sm text-gray-500 rounded-lg md: dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 md:ml-2 max-w-5 xs:hidden">
+                    class="p-2 text-sm text-gray-500 rounded-lg md: dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 md:ml-2 max-w-10 xs:hidden">
                 <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
                      xmlns="http://www.w3.org/2000/svg">
                     <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z">
