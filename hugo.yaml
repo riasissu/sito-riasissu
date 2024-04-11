@@ -62,7 +62,7 @@ params:
     heading: "Dona il 5x1000 alla RIASISSU"
     content:
       - text: "Puoi trovare tutte le informazioni al link sottostante:"
-    action: "/5x1000"
+    action: "/it/5x1000"
     label: "Email address"
     placeholder: "Enter your email"
     button: "Dona ora!"
@@ -146,6 +146,10 @@ menu:
       name: Scambi interscuola
       url: /scambi
       weight: 40
+    - identifier: orientamento
+      name: Orientamento
+      url: /events/orientamento
+      weight: 50
   footer:
     - identifier: about
       name: About
@@ -297,6 +301,10 @@ languages:
           name: Interschool Exchanges
           url: /scambi
           weight: 40
+        - identifier: orientamento
+          name: Orientation days
+          url: /events/orientamento
+          weight: 50
       footer:
         - identifier: about
           name: About
