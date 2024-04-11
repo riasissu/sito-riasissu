@@ -8,7 +8,7 @@ enableRobotsTXT: true
 canonifyURLs: true
 paginate: 12
 darkmode_js:
-  - assets/js/darkmode.js
+  - assets/js/darkmode.min.js
 enableInlineShortcodes: true
 
 markup:
