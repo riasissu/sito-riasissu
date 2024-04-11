@@ -1,7 +1,7 @@
-baseURL: ''
+baseURL: 'https://www.riasissu.it/'
 title: RIASISSU
-languageCode: it-IT
-DefaultContentLanguage: it
+defaultContentLanguage: it
+defaultContentLanguageInSubdir: true
 enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
@@ -53,38 +53,11 @@ params:
   description: ""
   disable_theme_toggle: false
   disable_stay_uptodate: false
-
   p1:
     heading: "Chi siamo?"
     image: "images/pages/xIMG_5204.jpg"
     content:
       - text: "La “Rete Italiana dellɜ Allievɜ delle Scuole e degli Istituti di Studi Superiori Universitari - APS” è un’associazione costituita nell’aprile 2016 e iscritta al RUNTS da maggio 2023. Ad essa prendono parte gli allievi di tutte le Scuole Superiori Universitarie italiane che condividono i principi dello Statuto dell’associazione. Ha principalmente due scopi: uno interno, ovvero creare connessioni fra gli allievi soci; uno esterno, cioè promuovere la cultura del merito nella collettività."
-  
-  # p2:
-  #   heading: "Le scuole"
-  #   image: "images/pages/hacktoberfest.jpg"
-  #   content:
-  #     - text: ""
-  # p3:
-  #   heading: "Backed by world-renowned investors"
-  #   content:
-  #     - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
-  #   links:
-  #     - text: Meet our investors and advisors
-  #       url: "#"
-  #   logos:
-  #     - identifier: a
-  #       image: "images/global/bg-logo.png"
-  #       alt: "a"
-  #     - identifier: b
-  #     - identifier: c
-  #     - identifier: d
-  #     - identifier: e
-  #     - identifier: f
-  # p4:
-  #   heading: "From the blog"
-  #   content:
-  #     - text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed."
   p5:
     heading: "Dona il 5x1000 alla RIASISSU"
     content:
@@ -115,7 +88,7 @@ menu:
       name: Le Scuole
       url: /scuole/
       weight: 10
-    - identifier: associaone
+    - identifier: associazione
       pre: dropdown
       name: L'associazione
       weight: 30
@@ -131,11 +104,11 @@ menu:
       name: Contatti
       url: /contact/
       weight: 50
-    - riservato:
+    - identifier: riservato
       name: Area riservata
       url: https://riasissu.sharepoint.com/sites/RETEITALIANADELL3ALLIEV3DELLESCUOLEEDEGLIISTITUTIDISTUDISUPE
       weight: 60
-  associaone:
+  associazione:
     - identifier: organ
       name: Organigramma
       url: /organigramma/
@@ -224,3 +197,120 @@ module:
   hugoVersion:
     extended: true
     min: "0.104.0"
+
+
+languages:
+  it:
+    languageName: IT
+    weight: 1
+    contentDir: content/it
+    languageCode: it-IT
+  en:
+    languageName: EN
+    weight: 2
+    contentDir: content/en
+    languageCode: en-US
+    params:
+      author: RIASISSU
+      authorimage: /images/bg-logo.png
+      og_image: /images/front.jpg
+      moto: "Italian Network of Students from High Schools and Higher Education Institutions"
+      description: ""
+      disable_theme_toggle: false
+      disable_stay_uptodate: false
+      p1:
+        heading: "Who we are?"
+        image: "images/pages/xIMG_5204.jpg"
+        content:
+          - text: "The 'Rete Italiana dellɜ Allievɜ delle Scuole e degli Istituti di Studi Superiori Universitari - APS' is an association established in April 2016 and registered with RUNTS since May 2023. It involves students from all Italian Higher Education Schools who share the principles of the association's statute. It has mainly two purposes: an internal one, which is to create connections among member students; an external one, which is to promote a culture of merit within the community."
+      p5:
+        heading: "Donate 5x1000 to RIASISSU"
+        content:
+          - text: "You can find all the information at the link below:"
+        action: /en/5x1000/
+        label: "Email address"
+        placeholder: "Enter your email"
+        button: "Donate now!"
+        weight: 50
+    
+    menu:
+      main:
+        - identifier: schools
+          name: The Schools
+          url: /scuole/
+          weight: 10
+        - identifier: association
+          pre: dropdown
+          name: The Association
+          weight: 30
+        - identifier: dropdown
+          pre: dropdown
+          name: Events and Activities
+          weight: 40
+        - identifier: 5x1000
+          name: 5x1000
+          url: /5x1000/
+          weight: 50
+        - identifier: contact
+          name: Contact
+          url: /contact/
+          weight: 50
+        - identifier: reserved
+          name: Reserved Area
+          url: https://riasissu.sharepoint.com/sites/RETEITALIANADELL3ALLIEV3DELLESCUOLEEDEGLIISTITUTIDISTUDISUPE
+          weight: 60
+      association:
+        - identifier: organ
+          name: Organizational Chart
+          url: /organigramma/
+          weight: 10
+        - identifier: commissions
+          name: Commissions
+          url: /commissioni/
+          weight: 20
+      dropdown:
+        - identifier: chiasmo
+          name: The Chiasmo
+          url: "/events/chiasmo"
+          weight: 10
+        # - identifier: edulia
+        #   name: Edulia
+        #   post: "Check your latest comments"
+        #   url: "#"
+        #   weight: 20
+        # - identifier: debate
+        #   name: Competitive Debate
+        #   post: "Take a look at your statistics"
+        #   url: "#"
+        #   weight: 30
+        - identifier: idea-network
+          name: Idea Network
+          post: "Take a look at your statistics"
+          url: "/events/rete"
+          weight: 30
+        # - identifier: conferences
+        #   name: Conferences and Seminars
+        #   post: "Take a look at your statistics"
+        #   url: "#"
+        #   weight: 30
+        - identifier: exchanges
+          name: Interschool Exchanges
+          url: /scambi
+          weight: 40
+      footer:
+        - identifier: about
+          name: About
+          url: /
+          weight: 10
+        - identifier: schools
+          name: Schools
+          url: /scuole/
+          weight: 20
+        - identifier: 5x1000
+          name: 5x1000
+          url: /5x1000/
+          weight: 30
+        - identifier: contacts
+          name: Contacts
+          url: /contact/
+          weight: 50
