@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   hugo-extended:
-    specifier: ^0.124.1
-    version: 0.124.1
+    specifier: ^0.125.7
+    version: 0.125.7
 
 devDependencies:
   '@tailwindcss/typography':
@@ -779,8 +779,8 @@ packages:
       resolve-alpn: 1.2.1
     dev: false
 
-  /hugo-extended@0.124.1:
-    resolution: {integrity: sha512-GaF/wOTSrfobyVwd46/0KSwVPQ76ZEU4BnKj5rrLyYtGDwFM4UXGdtTa9z8xMI4DF9RvCV6UIvU0cvkcDEl+aA==}
+  /hugo-extended@0.125.7:
+    resolution: {integrity: sha512-zK4rsDWDJ5RDm+lfD3v4ypREIufOvSQKn/waB5PKTaAP9Ky5olei/M9uPLvWZ8h1OkiQ4Gg/+6QXJjndNCPxrQ==}
     engines: {node: '>=14.14'}
     hasBin: true
     requiresBuild: true
