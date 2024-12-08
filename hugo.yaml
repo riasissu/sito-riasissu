@@ -1,4 +1,4 @@
-baseURL: "" #'https://www.riasissu.it/'
+baseURL: 'https://www.riasissu.it/'
 title: RIASISSU
 defaultContentLanguage: it
 defaultContentLanguageInSubdir: true
@@ -72,8 +72,8 @@ params:
       enabled: false
       url: 'https://github.com/nusserstudios'
     facebook:
-      enabled: false
-      url: 'https://facebook.com/nusserstudios'
+      enabled: true
+      url: 'https://facebook.com/RIASISSU'
     instagram:
       enabled: true
       url: 'https://instagram.com/riasissu'
@@ -151,7 +151,7 @@ menu:
       weight: 40
   footer:
     - identifier: about
-      name: About
+      name: RIASISSU
       url: /
       weight: 10
     - identifier: scuole
