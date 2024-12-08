@@ -1,10 +1,10 @@
 ---
-title: "SASS Roma"
+title: "SSSAS di Roma"
 date: 2021-12-18T11:10:36+08:00
 draft: false
 language: it
 description: Le Scuole
-featured_image: "images/loghi/roma_logo.jpg"
+featured_image: "images/loghi/ssas_logo.png"
 ---
 
 Istituita nel 2011 presso “La Sapienza - Università di Roma”, la SSAS offre un percorso formativo complementare di alta qualificazione per alliev3 meritevol3 iscritti ad un corso di laurea Sapienza. Gli alliev3 sono ospitati presso la Residenza “L. Serianni”, hanno diritto ad una borsa di studio e all’esenzione da tasse universitarie.

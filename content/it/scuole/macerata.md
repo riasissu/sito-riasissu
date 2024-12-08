@@ -4,7 +4,7 @@ date: 2021-12-18T11:10:36+08:00
 draft: false
 language: it
 description: Le Scuole
-featured_image: "images/loghi/macerata_logo.jpg"
+featured_image: "images/loghi/macerata_logo.png"
 ---
 
 Fondata nel 2008 presso l’Università degli Studi di Macerata, la “Scuola di Studi Superiori Giacomo Leopardi” è un istituto di alta formazione che si affianca ai corsi universitari e coltiva il talento di studentɜ selezionatɜ sulla base del solo merito.
