@@ -1,10 +1,10 @@
 ---
-title: "SASS Roma"
+title: "SSSAS di Roma"
 date: 2021-12-18T11:10:36+08:00
 draft: false
 language: en
 description: The Schools
-featured_image: "images/loghi/roma_logo.jpg"
+featured_image: "images/loghi/ssas_logo.png"
 ---
 
 Established in 2011 at "La Sapienza - University of Rome", the SSAS offers a complementary high-quality training program for deserving students enrolled in a Sapienza degree course. Students are hosted at the "L. Serianni" Residence, entitled to a scholarship, and exempt from university fees.

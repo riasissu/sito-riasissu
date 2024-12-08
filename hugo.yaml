@@ -8,7 +8,7 @@ enableRobotsTXT: true
 canonifyURLs: true
 paginate: 12
 darkmode_js:
-  - assets/js/darkmode.js
+  - assets/js/darkmode.min.js
 enableInlineShortcodes: true
 
 markup:
@@ -47,7 +47,7 @@ markup:
 
 params:
   author: RIASISSU
-  description: "" #"La RIASISSU è un’associazione costituita nell’aprile 2016. Ad essa prendono parte gli allievi di tutte le Scuole Superiori Universitarie italiane che condividono i principi dello Statuto dell’associazione. Ha principalmente due scopi: uno interno, ovvero creare connessioni fra gli allievi soci; uno esterno, cioè promuovere la cultura del merito nella collettività."
+  description: "" ##"La RIASISSU è un’associazione costituita nell’aprile 2016. Ad essa prendono parte gli allievi di tutte le Scuole Superiori Universitarie italiane che condividono i principi dello Statuto dell’associazione. Ha principalmente due scopi: uno interno, ovvero creare connessioni fra gli allievi soci; uno esterno, cioè promuovere la cultura del merito nella collettività."
   authorimage: /images/bg-logo.png
   og_image: /images/front.jpg
   moto: "Rete Italiana degli Allievi delle Scuole e degli Istituti di Studi Superiori Universitari"
@@ -72,8 +72,8 @@ params:
       enabled: false
       url: 'https://github.com/nusserstudios'
     facebook:
-      enabled: false
-      url: 'https://facebook.com/nusserstudios'
+      enabled: true
+      url: 'https://facebook.com/RIASISSU'
     instagram:
       enabled: true
       url: 'https://instagram.com/riasissu'
@@ -151,7 +151,7 @@ menu:
       weight: 40
   footer:
     - identifier: about
-      name: About
+      name: RIASISSU
       url: /
       weight: 10
     - identifier: scuole

@@ -9,15 +9,7 @@ description: The Schools
 To view the educational offerings for each school, click on the links below:
 
 - [Scuola Superiore Di Toppo Wassermann](https://superiore.uniud.it/it/scuola/eventi-conferenze-attivita)
-- [Scuola Galileiana di Studi Superiori di Padova](galileiana/)
-- [Collegio Internazionale Ca’ Foscari di Venezia](venezia/)
-- [Collegio Superiore di Bologna](bologna/)
-- [Istituto universitario Studi Superiori di Pavia](pavia/)
-- [SSST "Ferdinando Rossi" di Torino](torino/)
-- [Scuola Superiore Sant'Anna di Pisa](sant/)
-- [Scuola Normale Superiore di Pisa](normale/)
-- [Scuola di Studi Superiori "Giacomo Leopardi" di Macerata](macerata/)
-- [SSAS di Roma](roma/)
-- [ISUFI di Lecce](lecce/)
-- [Scuola Superiore di Catania](catania/)
+- ISUFI di Lecce:
+
+{{<embed-pdf url="ISUFI_Summer School.pdf" >}}
 

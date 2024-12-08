@@ -9,7 +9,11 @@ description: Le Scuole
 Per visualizzare l'offerta didattica per ogni scuola cliccare sui link sottostanti:
 
 - [Scuola Superiore Di Toppo Wassermann](https://superiore.uniud.it/it/scuola/eventi-conferenze-attivita)
-- [Scuola Galileiana di Studi Superiori di Padova](galileiana/)
+- ISUFI di Lecce:
+
+{{<embed-pdf url="ISUFI_Summer School.pdf" >}}
+
+<!-- - [Scuola Galileiana di Studi Superiori di Padova](galileiana/)
 - [Collegio Internazionale Ca’ Foscari di Venezia](venezia/)
 - [Collegio Superiore di Bologna](bologna/)
 - [Istituto universitario Studi Superiori di Pavia](pavia/)
@@ -18,6 +22,5 @@ Per visualizzare l'offerta didattica per ogni scuola cliccare sui link sottostan
 - [Scuola Normale Superiore di Pisa](normale/)
 - [Scuola di Studi Superiori "Giacomo Leopardi" di Macerata](macerata/)
 - [SSAS di Roma](roma/)
-- [ISUFI di Lecce](lecce/)
 - [Scuola Superiore di Catania](catania/)
-
+ -->
