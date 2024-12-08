@@ -1,4 +1,4 @@
-baseURL: 'https://www.riasissu.it/'
+baseURL: "" #'https://www.riasissu.it/'
 title: RIASISSU
 defaultContentLanguage: it
 defaultContentLanguageInSubdir: true
@@ -47,7 +47,7 @@ markup:
 
 params:
   author: RIASISSU
-  description: "" #"La RIASISSU è un’associazione costituita nell’aprile 2016. Ad essa prendono parte gli allievi di tutte le Scuole Superiori Universitarie italiane che condividono i principi dello Statuto dell’associazione. Ha principalmente due scopi: uno interno, ovvero creare connessioni fra gli allievi soci; uno esterno, cioè promuovere la cultura del merito nella collettività."
+  description: "" ##"La RIASISSU è un’associazione costituita nell’aprile 2016. Ad essa prendono parte gli allievi di tutte le Scuole Superiori Universitarie italiane che condividono i principi dello Statuto dell’associazione. Ha principalmente due scopi: uno interno, ovvero creare connessioni fra gli allievi soci; uno esterno, cioè promuovere la cultura del merito nella collettività."
   authorimage: /images/bg-logo.png
   og_image: /images/front.jpg
   moto: "Rete Italiana degli Allievi delle Scuole e degli Istituti di Studi Superiori Universitari"
