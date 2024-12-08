@@ -1,4 +1,4 @@
-baseURL: 'https://www.riasissu.it/'
+baseURL: "" #'https://www.riasissu.it/'
 title: RIASISSU
 defaultContentLanguage: it
 defaultContentLanguageInSubdir: true
