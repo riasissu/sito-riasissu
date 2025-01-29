@@ -5,5 +5,5 @@ draft: false
 language: it
 ---
 
-- **Coordinatore nazionale**: antonio.cariola@riasissu.it
+- **Coordinatrice nazionale**: maddalena.feltrin@riasissu.it
 - **Responsabile commisione servizi informatici**: francesco.decataldo@riasissu.it (contattare per segnalare malfunzionamenti...)

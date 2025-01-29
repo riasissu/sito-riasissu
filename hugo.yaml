@@ -87,6 +87,10 @@ params:
 
 menu:
   main:
+    - identifier: xcool
+      name: XCool
+      url: /xcool/
+      weight: 5
     - identifier: scuole
       name: Le Scuole
       url: /scuole/
@@ -145,6 +149,10 @@ menu:
     #   post: "Take a look at your statistics"
     #   url: "#"
     #   weight: 30
+    - identifier: openday
+      name: Open Day
+      url: /events/openday
+      weight: 40
     - identifier: scambi
       name: Scambi interscuola
       url: /scambi
