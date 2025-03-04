@@ -24,13 +24,15 @@ featured_image: images/organigramma.png
 | **Scuola Galileiana di Studi Superiori di Padova** | - Vittorio Magnaguagno <br> - Chiara Novelli        |
 | **Scuola Normale Superiore di Pisa** | - Alessio Casalini <br> - Marcello Zeni |
 | **Istituto universitario Studi Superiori di Pavia** | - Alberto Anelli <br> - Paride Brogiolo |
-|**Collegio Internazionale Ca’ Foscari di Venezia** | - Giueppe Romeo <br> - Matilde Mori |
+| **Collegio Internazionale Ca’ Foscari di Venezia** | - Giuseppe Romeo <br> - Matilde Mori |
 | **Collegio Superiore di Bologna** | - Lorenzo Ciaffi <br> - Ginevra Barbato |
 | **SSST "Ferdinando Rossi" di Torino** | - Nicolò Piccolo |
 | **Scuola Superiore Sant'Anna di Pisa**| - Giovanni Papi <br> - Edoardo Spataro  |
 | **SSAS di Roma** | - Daniele Calogero <br> - Alessandro Modesto | 
-| **ISUFI di Lecce**: | - Sabrina Zappatrice <br> - Edoardo Perisicce |
+| **ISUFI di Lecce** | - Sabrina Zappatrice <br> - Edoardo Perisicce |
 | **Scuola Superiore di Catania** | - Marco Anfuso <br> - Giuseppe Stefano Basile |
+| **Scuola di Studi Superiori "Giacomo Leopardi" di Macerata** | - Giorgia Pazzi <br> -  Serena Cinquepalmi | 
+<!-- 
 <!-- **Scuola Superiore Di Toppo Wassermann**:
 
 - Francesco Decataldo
