@@ -1,4 +1,4 @@
-baseURL: 'https://www.riasissu.it/' #
+baseURL: 'https://riasissu.it/' #
 title: RIASISSU
 defaultContentLanguage: it
 defaultContentLanguageInSubdir: true
@@ -340,3 +340,8 @@ languages:
           name: Contacts
           url: /contact/
           weight: 50
+
+redirects:
+  - from: "/it/xcool/"
+    to: "/xcool/"
+    status: 301
