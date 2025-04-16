@@ -1,8 +1,7 @@
 node_modules/
 resources/
-static/xcool/
 public/
-.firebase
+.firebase/
 assets/jsconfig.json
 .hugo_build.lock
 .vercel
