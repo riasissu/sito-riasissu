@@ -9,7 +9,7 @@ exports.passwordProtectedPage = functions.https.onRequest((req, res) => {
       return res.status(400).json({error: "Password required"});
     }
 
-    const correctPassword = "abcde00"; // Set your actual password here
+    const correctPassword = "Xcool_Udine_2025";
 
     if (password === correctPassword) {
       return res.json({redirectUrl: "https://forms.office.com/e/KfpnEWdDwv"});
@@ -27,7 +27,7 @@ exports.passwordProtectedPageTeam = functions.https.onRequest((req, res) => {
       return res.status(400).json({error: "Password required"});
     }
 
-    const correctPassword = "abcde00"; // Set your actual password here
+    const correctPassword = "Xcool_Udine_2025";
 
     if (password === correctPassword) {
       return res.json({redirectUrl: "https://forms.office.com/e/Z5zitkZLGv"});
