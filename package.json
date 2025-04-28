@@ -44,6 +44,6 @@
   },
   "homepage": "https://github.com/nusserstudios/tailbliss",
   "dependencies": {
-    "hugo-extended": "^0.124.1"
+    "hugo-extended": "^0.147.0"
   }
 }
