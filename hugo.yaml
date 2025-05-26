@@ -1,4 +1,4 @@
-baseURL: 'https://www.riasissu.it/' #
+baseURL: 'https://riasissu.it/' #
 title: RIASISSU
 defaultContentLanguage: it
 defaultContentLanguageInSubdir: true
@@ -53,11 +53,26 @@ params:
   moto: "Rete Italiana dell3 Alliev3 delle Scuole e degli Istituti di Studi Superiori Universitari"
   disable_theme_toggle: false
   disable_stay_uptodate: false
-  p1:
+  p2:
     heading: "Chi siamo?"
     image: "images/pages/xIMG_5204.jpg"
     content:
       - text: "La “Rete Italiana dellɜ Allievɜ delle Scuole e degli Istituti di Studi Superiori Universitari - APS” è un’associazione costituita nell’aprile 2016 e iscritta al RUNTS da maggio 2023. Ad essa prendono parte gli allievi di tutte le Scuole Superiori Universitarie italiane che condividono i principi dello Statuto dell’associazione. Ha principalmente due scopi: uno interno, ovvero creare connessioni fra gli allievi soci; uno esterno, cioè promuovere la cultura del merito nella collettività."
+  p1:
+    heading: "Open Day 17-30 Marzo 2025 "
+    image: "images/pages/openday.jpg"
+    content:
+      - text: "Scopri le opportunità in affiancamento all’Università offerte da 12 atenei italiani: Scuole Normale e
+Sant’Anna di Pisa, Galileiana di Padova, IUSS di Pavia, Università di Venezia, Bologna, Lecce, Macerata, Catania, Udine, Roma e Torino. Approfondisci i loro vantaggi economici e formativi, tra cui l’alloggio gratuito e il conseguimento di un
+Master di II livello.
+L’evento consiste in diversi incontri da 50 minuti distribuiti nei pomeriggi dal 17 al 30 marzo 2025. Potrai conoscere la Rete e le sue Scuole interagendo direttamente con noi alliev3!"
+  
+  p3:
+    heading: "XCOOL"
+    image: "images/pages/scambi.jpg"
+    content:
+      - text: "CIAO"
+  
   p5:
     heading: "Dona il 5x1000 alla RIASISSU"
     content:
@@ -87,6 +102,10 @@ params:
 
 menu:
   main:
+    - identifier: xcool
+      name: XCool
+      url: /xcool/
+      weight: 5
     - identifier: scuole
       name: Le Scuole
       url: /scuole/
@@ -145,6 +164,10 @@ menu:
     #   post: "Take a look at your statistics"
     #   url: "#"
     #   weight: 30
+    - identifier: openday
+      name: Open Day
+      url: /events/openday
+      weight: 40
     - identifier: scambi
       name: Scambi interscuola
       url: /scambi
@@ -317,3 +340,8 @@ languages:
           name: Contacts
           url: /contact/
           weight: 50
+
+redirects:
+  - from: "/it/xcool/"
+    to: "/xcool/"
+    status: 301

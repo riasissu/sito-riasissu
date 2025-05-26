@@ -12,7 +12,7 @@ Introduction to Rete di Idee
 
 ## Network of Ideas 2022 (Udine)
 
-![NetworkUdine](networkUdine.png)
+![NetworkUdine](reteUdine.png)
 
 ### Link to the publication
 
