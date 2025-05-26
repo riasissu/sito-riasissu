@@ -5,5 +5,5 @@ draft: false
 language: en
 ---
 
-- **National Coordinator**: antonio.cariola@riasissu.it
+- **National Coordinator**: maddalena.feltrin@riasissu.it
 - **Responsible for the IT services commission**: francesco.decataldo@riasissu.it (contact for reporting malfunctions...)
